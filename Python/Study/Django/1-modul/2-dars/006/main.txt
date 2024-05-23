@@ -1,0 +1,6 @@
+Relational database larga misol keltiring. Ularning nima afzalliklari bor?
+
+Postgres, SQLite, MySQL
+
+Har doim ma'lumotlar table va bir biririga bog;langan bo'ladi va tablellarning nomi ham bo'ladi.
+CRUP qilsa bo'ladi.

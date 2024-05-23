@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Student</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    .form-container {
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 50px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        padding: 20px;
+    }
+    .form-field {
+        margin-bottom: 20px;
+    }
+    .form-field label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .form-field input, .form-field select, .form-field textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    .form-field button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .form-field button:hover {
+        background-color: #45a049;
+    }
+</style>
+
+</head>
+<body>
+{% include 'navbar.html' %}
+    <div class="form-container">
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-field">
+                <label for="student_id">Student id: </label>
+                <input type="number" id="student_id" name="student_id" placeholder="Enter student id here">
+            </div>
+            <div class="form-field">
+                <label for="ism">Ism:</label>
+                <input type="text" id="ism" name="ism" placeholder="Enter student name here">
+            </div>
+            <div class="form-field">
+                <label for="familya">Familiya:</label>
+                <input type="text" id="familya" name="familya" placeholder="Enter student surname here">
+            </div>
+            <div class="form-field">
+                <label for="yoshi">Yoshi:</label>
+                <input type="number" id="yoshi" name="yoshi" placeholder="Enter student age here">
+            </div>
+            <div class="form-field">
+                <label for="sinf">Kursi:</label>
+                <select name="sinf" id="sinf">
+                <option value="1-kurs">1-kurs</option>
+                <option value="2-kurs">2-kurs</option>
+                <option value="3-kurs">3-kurs</option>
+                <option value="4-kurs">4-kurs</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="addres">Adress: </label>
+                <textarea id="addres" name="addres" rows="4" cols="50" placeholder="Enter your adress here">
+                </textarea>
+            </div>
+            <div class="form-field">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

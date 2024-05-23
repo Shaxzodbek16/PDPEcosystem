@@ -1,0 +1,69 @@
+There is database code which is in ".idea" folder.
+
+#1
+create function auth_login(uname character varying, pswd character varying) returns text
+as $$
+declare
+  t_authuser record;
+begin
+  select * into t_authuser from auth.authuser where username = uname;
+  if not FOUND or not utils.match_password(pswd, t_authuser.password) then
+    raise exception case current_language;create function auth_login(uname character varying, pswd character varying) returns text
+    language plpgsql
+as
+$$
+declare
+    t_authuser record;
+    error_message text;
+begin
+    select * into t_authus
+
+#2
+create function auth_login(uname character varying, pswd character varying) returns text
+    language plpgsql
+as
+$$
+declare
+    t_authuser record;
+    error_message text;
+begin
+    select * into t_authuser from auth.authuser where username = uname;
+    if not FOUND or not utils.match_password(pswd, t_authuser.password) then
+        select message into error_message from error_messages where language = t_authuser.language and error_type = 'invalid_credentials';
+        raise exception error_message;
+    end if;
+
+    return json_build_object(
+            'id', t_authuser.id,
+            'username', t_authuser.username,
+            'role', t_authuser.role,
+            'created_date', t_authuser.created_at,
+            'language', t_authuser.language
+           )::text;
+end
+$$;
+
+alter function auth_login(varchar, varchar) owner to postgres;
+
+create function auth_register(uname character varying, pswd character varying) returns integer
+    language plpgsql
+as
+$$
+    declare
+        newID int;
+        error_message text;
+    begin
+        if exists(select * from auth.authuser a where a.username ilike uname) then
+            select message into error_message from error_messages where language = a.language and error_type = 'username_taken';
+            raise exception error_message;
+        end if;
+
+        insert into auth.authuser (username, password)
+        values (uname, utils.encode_password(pswd))
+        returning id into newID;
+        return newID;
+    end
+    $$;
+
+alter function auth_register(varchar, varchar) owner to postgres;
+

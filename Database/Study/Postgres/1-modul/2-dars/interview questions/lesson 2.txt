@@ -1,0 +1,10 @@
+Table nima ?
+upsert nima ?
+PSQL dagi qandey muhim command larni bilasiz ?
+Constraint nima ?
+PostgreSQL da qanday constraint lar bor ?
+foreign key constraint nima ?
+unique constraint nima ?
+check constraint nima ?
+not null constraint nima ?
+primary key constraint nima ?

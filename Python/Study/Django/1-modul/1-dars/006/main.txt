@@ -1,0 +1,9 @@
+HTTP 200, 400, 500 status kodlari nimani anglatadi?
+
+200 : OK. You can get content from server.
+301 : Moved Permanently
+302 : Found
+402 : Unauthorized
+403 : Forbidden
+404 : Not founded
+500 : Internal server Error

@@ -1,0 +1,14 @@
+Ma'lumotlar ombori(Database) nima ?
+DBMS nima ?
+DBMS ni qandey turlari bor ?
+RDBMS nima ?
+DBMS bilan RDBMS ni nima farqi bor ?
+SQL nima ?
+Query nima ?
+SQL ni qandey elementlari bor ?
+DDL nima ?
+DML nima ?
+TCL nima ?
+DQL nima ?
+Client Server model nima ?
+Postgresql uchun qandey client larni bilasiz ?

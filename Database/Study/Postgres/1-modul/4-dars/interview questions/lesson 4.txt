@@ -1,0 +1,6 @@
+column alies nima ?
+order by clause ni tushuntiring ?
+distinct nima ?
+between operaatori nima uchun kerak ?
+like va ilike operatorlarini faqri qanday
+all, any, exists vazifalari, nima maqsadlar da ishlatiladi ?

@@ -1,0 +1,37 @@
+
+Savol: RAISE statement'ning maqsadi sintaksisi  qanday?
+
+Javob: Masalan error chiqqan payti shu error haqida ko'proq ma'lumot berish uchun xuddi pythondagi try except ga o'xshab.
+Sintaksisi:
+    raise level format
+        level
+            debug
+            log
+            notice
+            info
+            warning
+            exception (default)
+        format
+            %
+        options
+            message
+            hint
+            detail
+            errcode
+
+
+for instance:
+do $$
+    begin
+        insert into customer(name, age)
+        values ('Shaxzodbek', '19');
+        raise exception using message = 'Error for test',
+            hint ='This error generated for test ',
+            detail ='this is detail for error',
+            errcode ='01617';
+        raise sqlstate '00404';
+    end
+    $$;
+
+
+

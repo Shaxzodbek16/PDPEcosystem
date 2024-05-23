@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of courses</title>
+</head>
+<body>
+    <h1>Welcome to our Teachrs page</h1>
+    {%if not is_empty %}
+    <form method="GET">
+        <input  type="text" name="search" value="{{search}}" placeholder="Enter teacher name you are searching" > </br>
+        <button type="submit">Search<button>
+    </form>
+    <br>
+    <table border="1px solid red" width="100%">
+        <tr> <th>Name</th>
+            <th>Surname</th>
+            <th>Degree</th>
+        </tr>
+        {% for teacher in Teachers %}
+        <tr>
+            <td>{{teacher.first_name}}</td>
+            <td>{{teacher.last_name}}</td>
+            <td>{{teacher.degree}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <h1>There are no Teachers</h1>
+    {% endif %}
+</body>
+</html>

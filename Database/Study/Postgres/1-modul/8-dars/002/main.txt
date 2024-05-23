@@ -1,0 +1,43 @@
+
+Savol: Function dan qanday qilib table qaytarish mumin ?
+
+Javob:
+create function function_name() returns table(
+        smth1 int,
+        smth2 varchar(100),
+        ...;
+    )
+    as $$
+
+        declare
+
+        begin
+            return query(write query)
+        end
+
+        $$ language plpgsql;
+
+select * from function_name
+
+
+########################################################################
+
+out orqali ma'lumot olish mumkin
+misol uchun: bitta funksiya yaratiladi va uning parametiriga "out" orqali nima kerakligini yozamiz,
+keyin $$$$'ning ichida logikasini yozsak bo'ldi
+
+Function yaratish:
+create /* or replace */ function function_name(parameters) return something as 
+    $$
+
+        declare
+
+        begin
+
+        end
+
+    $$ language plpgsql;
+
+
+
+Trigger -> bu automatik ishlovchi funksiya.

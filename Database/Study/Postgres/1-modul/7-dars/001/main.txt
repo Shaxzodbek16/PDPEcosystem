@@ -1,0 +1,10 @@
+
+
+Savol: Dollar-Quoted string constant nima ? bu haqida to'liq yozing.
+
+batafsil javob: 
+select ' I'm Shaxzodbek ' -> error
+select $tag$ I'am Shaxzodbek $tag$ -> not error
+bunda birtirnoq toki qo'shtirnoq bilan yozilgan narsalarni error qilmasdan o'qiydi
+
+Anonymous block - bu bir necha qator murakkab kodlarni yozishga imkon beruvchi block hisoblanadi.

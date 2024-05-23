@@ -1,0 +1,17 @@
+NoSQL database larga misol keltiring. Ular relational databaselarga qaraganda qanday afzallik va kamchiliklarga ega?
+
+Avzalliklari:
+    (Wide-column)
+    (Document)
+    (Graph)
+    (key-value)
+    ma'lumotlar RAMga yozilgani uchun tez
+Misol:
+    MongoDB (Document)
+    Neo4j (Graph)
+    Redis (key-value)
+    Cassandra (Wide-column)
+Kamchiliklari:
+    Consistent emas
+    Value errors
+    Insert or set errors

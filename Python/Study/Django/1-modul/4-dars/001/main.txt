@@ -1,0 +1,9 @@
+Django Flaskdan qanday farq qiladi, afzalliklari nimada?
+
+Farqlari:
+    1. Django ko'proq katta proyektlar uchun ishlatiladi.
+    2. Djangoda siz tezda webapplicationni yozib tugatsangiz bo'ladi.
+    3. Djangoni ko'plab mashhur kompaniyalar ishlatgan.
+
+
+

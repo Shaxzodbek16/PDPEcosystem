@@ -1,0 +1,30 @@
+Python 2-modul uchun loyiha.
+
+Chat app yarating:
+
+Userda kamida id, name, username, password, bio, is_active fieldlari bo`lsin.
+Username va id takrorlanmas bo`lsin.
+Userlar ikki xil bo`lishi kerak Admin va oddiy user.
+Userlar tizimga username va password orqali kiradi.
+Tizimga kirishda login va register bo`lishi, register qilgandan so`ng login qila olishi kerak.
+Login qilish orqali shahsiy sahifaga o`tiladi.
+User register qilinayotganda admin yoki oddiy userligi tanlanadi.
+Admin sifatida register qilinsa is_active fieldi True bo`ladi va shaxsiy sahifaga login qilib kira oladi.
+Oddiy user sifatida register qilingan user is_active fieldi False qilib saqlanadi, qachonki admin user uni active qilib belgilasa keyin is_active True holatga o`tadi va shaxsiy kabinetga kira oladi. Aks holatda register qilingandan so`ng shaxsiy kabinetga kirilayotganda aktiv bo`lishingizni kuting degan xabar chiqariladi
+
+Oddiy user shahsiy sahifasida quyidagi menular bo`lishi kerak:
+1. Barcha foydalanuvchilarni ko`rish
+2. Shaxsiy chatlarni ko`rish
+3. Chatni boshlash
+4. Profileni uzgartirish
+
+Admin sahifasida quyidagi menular bo`lishi kerak:
+1. Aktiv userlar ro`yhati
+2. Aktiv bo`lmagan userlar ro`yhati
+3. Userni activate qilish
+4. Userni deactivate qilish
+
+Profile, chat va shu kabilar uchun klaslar yaratilinib objectlar orqali amallar bajarilishi kerak.
+
+Profillar haqidagi ma`lumotlar profiles.txt faylda saqlanishi kerak
+Barcha chat ma`lumotlari Sqlite databaseda saqlanishi kerak

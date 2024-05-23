@@ -1,0 +1,7 @@
+Nega Djangoda loyihalar yaratish tez?
+
+Javob:
+    1. Djangoda bizga kerakli hamma narsalar o'zi bilan keladi.
+    2. Batteries included
+    3. Pythonda ham boshqa dasturlash tillariga qaraganda kamroq kod yoziladi, shu sababdan, djangoda ham shunaqa.
+    4. Tayyor Frameworklari bor.

@@ -1,0 +1,14 @@
+Savol: Qanday qilib Materialized view dagi ma'lumotlarni yangilash mumkin ?
+
+javob: refresh materialized view materialized_view_name.  bu orginal tabledan qaytadan ma'lumotlarni oladi, yangilaydi va jo'natadi.
+
+
+some information for me:
+    materialized view bu ma'lumotni o'zida saqlovchi view hisoblanadi.
+    Siz asosiy tableni o'zgartirsangiz materialized view o'zgarmaydi.
+        PostgreSQL extends the view concept to the next level that allows views to store physically. And these views are called materialized views.
+        Materialized views cache the result of a complex and expensive query and allow yo refresh this result periodically.
+            CREATE MATERIALIZED VIEW view_name AS query WITH [NO] DATA;
+            REFRESH MATERIALIZED VIEW view_name;
+            REFRESH MATERIALIZED VIEW CONCURRENTLY VIew_name; -- from postgresql 9.4
+            DROP MATERIALIZED VIEW View_name;

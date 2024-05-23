@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbar</title>
+        <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-family: 'Open Sans', sans-serif;
+            background-color: aliceblue;
+        }
+        nav{
+            background-color: rgb(255, 255, 255);
+            padding: 1%;
+            margin: 0%;
+            box-sizing: border-box;
+            z-index: 3;
+        }
+        nav ul{
+            list-style-type: none;
+            margin: 0%;
+            padding: 0%;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+        }
+        nav ul li{
+            float: left;
+        }   
+        nav ul li a{
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border: 2px solid transparent;
+            transition-duration: 0.4s;
+        }
+        nav ul li a:hover{
+            background-color: #000;
+            color: #fff;
+            border-radius: 10px;
+        }
+        nav ul li a::before{
+            content: "";
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: white;
+            transition: width 0.4s;
+        }
+        nav ul li a:hover::before{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'add_student' %}">Add Student</a></li>
+            <li><a href="{% url 'show_student' %}">Show Students</a></li>
+            <li><a href="{% url 'update_student' %}">Update Student</a></li>
+            <li><a href="{% url 'delete_student' %}">Delete Student</a></li>
+            <li><a href="{% url 'search_student' %}">Search student</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

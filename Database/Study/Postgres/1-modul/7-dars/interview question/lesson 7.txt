@@ -1,0 +1,7 @@
+PL/pgSQL nima ?
+Nima uchun PL/pgSQL foydalanish kerak ? 
+Anonymous block nima ?
+rowtype qanday o'zgaruvchi ?
+record qanday o'zgaruvchi ?
+Qanday qilib o'zgaruvchilarni constant qilib qo'ysa bo'ladi ?
+IF statement sintaksisi qanday?

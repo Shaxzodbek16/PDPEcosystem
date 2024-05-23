@@ -1,0 +1,15 @@
+
+Savol: unique index bilan index'ni farqi nima ?
+
+Javob: 
+Database'da ma'lumotlar ko'payib ketadi va ularni olish uchun vaqt ko'p ketishi mumkin, 
+o'sha paytda index ishlatib vaqtdan ancha yutsa bo'ladi.
+
+Unique table'dagi qaysidir row'ni o'sha table'da unique ekanligini ta'minlab beradi.
+row 1 va row 2 birgalikda unique'ligini shart qilib berish uchun unique index'dan foydalanamiz.
+
+id |  row 1 | row 2 
+1  |  AA    | 12345 
+2  |  AA    | 12346 
+3  |  AB    | 12345
+

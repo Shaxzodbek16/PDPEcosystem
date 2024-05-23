@@ -1,0 +1,6 @@
+RAISE statement da nechta level bor ?
+RAISE statement da default level qanday ? 
+function nima ?
+procedure nima ?
+in, out, inout parameter lar farqilari ?
+Trigger nima ?

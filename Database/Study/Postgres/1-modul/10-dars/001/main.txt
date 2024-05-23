@@ -1,0 +1,6 @@
+
+Savol: Postgresql da ROLE qanday tushuncha ?
+
+javob: Role bu User accaunt degani. Userni o'rniga Role foydalaniladi. 
+Bir nechta Role'lar bo'lishi mumkin.
+Postgresql'da User degan tushuncha yo'q, uni o'rniga Role foydalaniladi.

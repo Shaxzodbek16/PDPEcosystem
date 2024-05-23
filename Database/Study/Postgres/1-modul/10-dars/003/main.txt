@@ -1,0 +1,9 @@
+
+Savol: Schema nima ?
+
+Javob: Database'dagi ma'lumotlarni guruhlab Schema'larga solsak bo'ladi.
+Masalan katta ko'p xonali oborxonani misol qilsak, omborxonani o'zi Database, uning har bir xonasi bitta Schema bo'ladi.
+U bilan logic usul bilan Schema'lash mumkin.
+Bir nechta table'larni, prodseduralarni va boshqalarni ham alohida bir Schema'ga solib qo'ysangiz bo'ladi.
+Tabblarning nomi bir xil bo'lsa va alohida alohida Schema tursa bo'laveradi.
+

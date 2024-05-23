@@ -1,0 +1,7 @@
+ACID nima ? 
+rollback ning vazifasi nima ?
+savepoint ning vazifasi nima ?
+Table ni join qilish nima degani ?
+Postgresql da necha xil join bor ?
+Natural join qanday join ?
+index nima uhcun ishlatiladi ?

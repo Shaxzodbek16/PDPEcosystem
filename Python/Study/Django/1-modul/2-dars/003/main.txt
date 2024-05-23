@@ -1,0 +1,6 @@
+Serverlar nega asosan LINUX OS da ishlaydi?
+
+
+1. Serverlarning 96.3% izi Linuxda ishlaydi (2020).
+2. Serveringiz Linuxda ishladimi, demak real serverda ham ishlaydi.
+3. Dasturchilar uchun kerakli ishlarni boshqa OS lardan ko'ra imkoniyatlari ko'proq.

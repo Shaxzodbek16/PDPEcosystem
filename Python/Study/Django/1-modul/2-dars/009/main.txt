@@ -1,0 +1,6 @@
+External service larga misol keltiring.
+
+1. Twilio
+2. SendGrid va hakazo
+
+Bular massage jo'natish uchun ishlatiladi.

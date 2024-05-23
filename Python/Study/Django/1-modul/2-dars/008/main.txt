@@ -1,0 +1,5 @@
+Elastic search nima?
+
+Elastic full text search engine hisoblanadi, ma'lumotlarni saqlash mumkin. Odatda secondary database sifatida foydalaniladi.
+Juda ham tez search qiladi.
+

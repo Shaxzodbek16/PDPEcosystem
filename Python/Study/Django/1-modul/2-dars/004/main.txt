@@ -1,0 +1,3 @@
+RAM (tezkor xotira) dan ko’proq foydalanishni talab etadigan vazifalarga misollar keltiring.
+
+Fayllarni o'qish, loop hosil qilish,

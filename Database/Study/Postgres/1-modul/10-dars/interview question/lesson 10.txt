@@ -1,0 +1,5 @@
+Role yaratish sintaksisi qanday ?
+grant ning vazifasi nima ?
+revoke ning vazifasi qanday ?
+Tablespace nima ? 
+Schema nima ?

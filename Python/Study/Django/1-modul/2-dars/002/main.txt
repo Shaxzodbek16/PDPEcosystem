@@ -1,0 +1,10 @@
+Frontend uchun qaysi dasturlash tillaridan foydalanish mumkin?
+
+JavaScript
+HTML
+CSS
+Vue.js
+React.js
+Node.js
+angularjs
+dart

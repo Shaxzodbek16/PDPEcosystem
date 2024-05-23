@@ -1,0 +1,2 @@
+PostgreSQL for reading : https://www.devart.com/dbforge/postgresql/how-to-install-postgresql-on-macos/
+PostgreSQL for watching : https://youtu.be/tducLYZzElo?si=o6jZ8Y3oBo1wy58U

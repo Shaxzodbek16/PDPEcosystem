@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About teacher</title>
+</head>
+<body>
+    <style>
+        table{
+            border: 1px solid black;
+            width: 100%;
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        th{
+            border: 1px solid black;
+            padding: 5px;
+            background-color: aquamarine !important;
+        }
+        th, td{
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: lightgray;
+            color: black;
+            font-family: sans-serif;
+        }
+    </style>
+    
+    <table>
+        <tr>
+            <th>Name:</th>
+            <th>Surname: </th>
+            <th>Degree: </th>
+        </tr>
+        <tr>
+            {%for info in About_teacher%}
+            <td>{{info.name}}</td>
+            <td>{{info.surname}}</td>
+            <td>{{info.degree}}</td>
+            {%endfor%}
+        </tr>
+    </table>
+</body>
+</html>

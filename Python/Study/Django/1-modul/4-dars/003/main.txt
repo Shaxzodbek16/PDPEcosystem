@@ -1,0 +1,36 @@
+Django loyihalarining arxitekturasi qanday qismlardan tashkil topgan?
+
+MVT dan foydalanadi.
+
+User URL orqali Djangoga murijaat qiladi, 
+URL Viewga murojaat qiladi, View o'z o'rnida 
+Models va templates lardan ma'lumotlarni yig'ib 
+Userga beradi.
+
+
+
+Projectning aosiy struchturasi:
+    Projectni urls'si hamda settings'si bo'ladi.
+    |
+    |   ---> App1
+            |->urls
+            |->models
+            |->view
+            |->test
+        ---> App2
+            |->urls
+            |->models
+            |->view
+            |->test
+        ---> App3
+            |->urls
+            |->models
+            |->view
+            |->test
+        ---> App4
+            |->urls
+            |->models
+            |->view
+            |->test
+
+

@@ -1,0 +1,11 @@
+PostgreSQL da qandey raqamli tip lar bor ?
+timestamp va timestamptz nima farqi bor ?
+Qanday usullarda uuid yaratsa bo'ladi ?
+hstore qayday ma'lumot turi xisoblanadi ?
+json da -> va ->> farqlari nima ?
+qanday usullar da custom data tip yaratish mumkin ?
+domain bilan type ni nima fariq bor ?
+sequence nima ?
+generated as identity nima ?
+temp yoki temporary table qanday table ?
+copy table qanday table ?

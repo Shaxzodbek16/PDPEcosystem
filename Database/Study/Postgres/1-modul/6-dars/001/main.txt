@@ -1,0 +1,7 @@
+Savol: GROUP BY Statement sintaksisi qanday ?
+
+Javob: GROPUP BY  bir nechta bir biri bilan bog'langan jadvallardagi ma'lumotlarni guruhlashga va kerakli funksiyalar orqali tahlil qilishga yordam beradi.
+sintaksisi: select row_name from table_name GROPUP BY row_name(which you want to select row_name from table_name)
+if you wanna add function: select row_name, your_function(agrigat funksiya) from table_name GROPUP BY row_name order by row_nam (which you want to select row_name from table_name)
+
+inaddtion : we may use "having [condition]" if we need.

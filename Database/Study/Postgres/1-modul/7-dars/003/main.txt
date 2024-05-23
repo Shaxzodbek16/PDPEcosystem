@@ -1,0 +1,42 @@
+
+Savol: PL/pgSQL da qanday usullarda sikl hosil qilsa boladi ?
+
+Javob: 1-usul loop
+do $$
+declare a int := 10;
+begin
+
+loop
+raise info 'a = %', a;
+exit when a=0;
+a := a-1;
+
+end
+$$;
+
+2-usul while
+do $$
+declare a int :=1;
+begin
+  while a<21 loop
+    raise info 'a = %', a;
+    a := a+1;
+  end loop;
+end
+$$;
+
+3-usul for
+do $$
+declare a int;
+begin
+  for a in 1..100 loop
+    raise info 'a = %', a;
+  end loop;
+end
+$$;
+
+
+
+note: continue bitta tashlab yana davom etaveradi.
+
+note for 'for loop': learn about 'reverse' and 'in' more

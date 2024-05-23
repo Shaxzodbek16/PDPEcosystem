@@ -1,0 +1,38 @@
+# Pre assessment Task: Computational thinking ko'nikmalari va kompyuter dasturlash tamoyillarini o'rganish
+
+## Vazifa: Berilgan kodni tahlil qilish
+
+Hangman papkasidagi kompyuter dasturlarini ko'rib chiqing va dasturlash tillari hamda dasturlash tamoyillarini qanday qilib samarali ilovalarni yaratish uchun qo'llanilganini o'rganing.
+
+Siz dasturlash tamoyillarini tadqiq qilasiz va:
+
+- computational thinking nima ekanligini tushuntiring va dasturchilar uni muammolarni hal qilish uchun qanday qo'llashlarini tahlil qiling, shu jumladan dasturchilar qanday qilib muammolarni aniqlaydilar va tavsiflaydilar hamda xususiyatlarni va jarayonlarni qanday ifodalaydilar. Dasturchilar qanday qilib naqshlarni tan olishadi (recognise patterns), umumlashtirishadi (generalise) va kerakli ma'lumotlarni abstrakt qilishadi, hamda dasturchilar muammolarni yoki tizimlarni qanday ifodalashadi
+- dasturiy ilovalarning foydalanishlarini tushuntiring va ular qanday qilib muammolarni hal qilishi va mijozlarning ehtiyojlarini qondirishi mumkinligini ko'rsating
+- dasturlash tillarining xususiyatlari va xarakteristikalarini o'rganing, turli xil dasturlash tillaridan foydalanishni tushuntiring, muhokama qilingan har bir dasturlash tilida qanday muammolarni hal qilish mumkinligini tushuntiring, bu dasturlash tillarining taqqoslashini berib
+- turli dasturlash tillaridagi tuzilmalar va texnikalarni tavsiflang (syntax), ular qanday amalga oshirilishi va hujjatlashtirilishi haqida tushuntiring, turli dasturlash tillarida ularning amalga oshirilishini taqqoslab
+- dastur dizayniga mantiqni qo'llashni tahlil qiling, matematik va taklif qiluvchi mantiq tamoyillarini, to'plamlar va iteratsiyalardan foydalanishni hisobga olib
+- dasturiy ilovaning dizayni va amalga oshirilishi uning sifatiga qanday ta'sir qilishi mumkinligini baholang
+
+Sifatli dasturiy ilovalarni baholashda, foydalanuvchi talablarini qanchalik qondirilganligi, kodning mustahkamligi, saqlanishi, samaradorligi, ko'chirilishi va foydalanish osonligini hisobga olishingiz kerak.
+
+## Baholash mezonlari
+
+### Pass mezonlari
+
+1. Computational thinking ko'nikmalarining dasturiy ilovalarni ishlab chiqishda qanday qo'llanilishini tushuntiring.
+2. Turli tillarda kompyuter dasturlash tamoyillarining qanday qo'llanilishi haqida tushuntiring.
+3. Dasturiy ilovalarni ishlab chiqishda dasturiy dizayn tamoyillarining qanday qo'llanilishi haqida tushuntiring.
+
+### Merit mezonlari
+
+Computational thinkingh ko'nikmalarining dasturiy dizaynga va ishlab chiqarilgan dasturiy ilovalarning sifatiga qanday ta'sir qilishi haqida tahlil qiling.
+
+### Distinction mezonlari
+
+Computational thinking ko'nikmalarining dasturiy dizaynga va ishlab chiqarilgan dasturiy ilovalarning sifatiga qanday ta'sir qilishi haqida baholang.
+
+## Ushbu Topshiriqni Bajarishda Sizga Yordam Beradigan Ma'lumot Manbalari
+
+- COMPUTATIONAL THINKING A beginner’s guide to problem-solving and programming Karl Beecher
+- Luciano Ramalho
+- Mark Lutz

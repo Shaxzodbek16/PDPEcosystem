@@ -1,0 +1,19 @@
+
+Savol: Transaction nima ?
+
+Javob: Bizning SQL query'larning ishlash qismi Transaction deyiladi. U to'g'ri ishlashi uchun ACID'ni
+bajarishi kerak.
+
+
+
+
+Database |
+         |
+        \  /
+         \/
+|------------------------------------|
+|      |----------------------|      |
+|      |query ishlayotgan joy |      |
+|      |----------------------|      |
+|------------------------------------|
+

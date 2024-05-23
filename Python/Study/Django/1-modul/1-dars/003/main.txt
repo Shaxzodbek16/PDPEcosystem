@@ -1,0 +1,3 @@
+IP 4 ta raqamli 0-255 oralig'ida bo'ladi. Har bir foydalanuvchi ushbu IP bilan ma'lumot almashgan.
+IP paket orqali ma'lumot jo'natadi, agar boiz 4kb da oshiq malumot jo'natsak, uni bir nechta packetchalargan bo'linadi
+va biz yuborgan IP da yana yig'iladi.

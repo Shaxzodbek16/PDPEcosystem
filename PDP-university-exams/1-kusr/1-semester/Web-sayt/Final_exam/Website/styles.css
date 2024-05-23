@@ -1,0 +1,746 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+@font-face {
+    font-family: PartyTimeFont;
+    src: url(YouthTouchDemoRegular-4VwY.ttf);
+}
+
+:root {
+    --gray: #e0e0e0;
+    --green: #0e501b;
+    --link: rgb(226, 129, 2);
+    --backgroundOfLink: rgba(124, 125, 126, 0.3);
+    --link1hover: rgb(232, 152, 48);
+    --link2hover: rgb(29, 129, 27);
+    --light-gray: #232323;
+    --accent-color: #282b42;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+li {
+    list-style: none;
+}
+
+.links li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.links1 li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.links li a:hover {
+    color: var(--link);
+    text-shadow: 15px 10px 25px var(--link);
+}
+
+.links1 li a:hover {
+    color: var(--green);
+    text-shadow: 15px 10px 25px var(--green);
+}
+
+/* Header */
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 0 5px;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    height: 50px;
+}
+
+.logo a img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+
+}
+
+.logo a img:hover {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 5px 15px 5px #424242;
+}
+
+.navbar .links,
+.navbar .links1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .links1,
+.navbar .links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* Dropdown_menu */
+.dropDown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropDown_menu.open {
+    height: 240px;
+}
+
+.dropDown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropDown_menu .links1 {
+    width: 100%;
+    display: block;
+    justify-content: center;
+}
+
+/* Hero */
+#team#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    text-shadow: 15px 15px 25px #000, 20px 20px 30px gray;
+}
+
+#hero h1 {
+    font-size: 14rem;
+    margin: 1rem 2rem 1rem;
+    font-family: PartyTimeFont;
+    color: var(--link);
+    text-shadow: 5px 5px 10px var(--green), 20px 20px 30px black;
+}
+
+#hero p {
+    font-size: 4rem;
+    margin: 2rem 0 16rem 3rem;
+    font-family: PartyTimeFont;
+    color: var(--green);
+    text-shadow: 5px 5px 10px #000000, 20px 20px 30px #000000;
+}
+
+@media screen and (max-width:860px) {
+    .navbar .links {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropDown_menu {
+        display: block;
+    }
+
+    #hero h1 {
+        font-size: 10rem;
+    }
+
+    #hero p {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    #hero h1 {
+        font-size: 6rem;
+    }
+
+    #hero p {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width:926px) {
+    #hero p {
+        font-size: 1.75rem;
+    }
+}
+
+/* Rooter (last page and contact us page) */
+.rooter {
+    width: 100%;
+    background: linear-gradient(90deg, #0e3949 0%, #0e3949 30%, #03a9f5 30%, #03a9f5 100%);
+}
+
+.contactUs {
+    position: relative;
+    width: 1005;
+    padding: 40px 100px;
+}
+
+.contactUs .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.contactUs .title h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    font-family: PartyTimeFont;
+}
+
+.form {
+    grid-area: form;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact {
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: "form info" "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+
+}
+
+.contact h3 {
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+/* Form */
+
+.formBox {
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox {
+    width: 100%;
+}
+
+.inputBox span {
+    color: #18b7ff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500px;
+}
+
+.inputBox input {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1 px solid #333;
+}
+
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1 px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"] {
+    background: #ff578b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+.inputBox ::placeholder {
+    color: #999;
+}
+
+/* info */
+
+.info {
+    background: #0e3959;
+}
+
+.info h3 {
+    color: #fff;
+}
+
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.info .infoBox div spaa {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div p {
+    color: #fff;
+}
+
+.info .infoBox div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.sci {
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+
+.sci li a i {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sci li a:hover {
+    color: #fff;
+}
+
+.map {
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 991px) {
+    .rooter {
+        background: #03a9f5;
+    }
+
+    .contactUs {
+        padding: 20px;
+
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "form" "info " " map";
+    }
+
+    .map {
+        min-height: 300px;
+
+    }
+
+    .formBox .row50 {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .inputBox {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 30px;
+    }
+
+    .map {
+        min-height: 300px;
+        padding: 0;
+    }
+}
+
+.information {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#team {
+    width: 100%;
+    padding: 2rem 0;
+    background-color: var(--light-gray);
+}
+
+#team .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#team h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: auto;
+}
+
+#team small {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.team_container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 17rem;
+    padding: 2rem;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    text-align: left;
+    flex-direction: column;
+    cursor: pointer;
+    transition: backgroun-color .5s ease, color .5s ease;
+}
+
+.card:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+
+}
+
+.img_wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.img_wrapper img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.image_wrapper .button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_wrapper .button img {
+    width: 26px;
+
+
+}
+
+.card .info p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card small {
+    letter-spacing: 1px;
+}
+
+.button>img {
+    width: 20px;
+}
+
+/* responsive */
+@media(max-width:576px) {
+    .team_container {
+        gap: 4rem;
+    }
+
+    .card {
+        text-align: center;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .card .img_wrapper {
+        margin-bottom: 1rem;
+    }
+}
+
+.price {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #5c539d;
+    padding-bottom: 20px;
+}
+
+.price h2 {
+    font-family: PartyTimeFont;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 60px;
+    margin: 0px 0 50px 0;
+    text-align: center;
+}
+
+.price-row {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+}
+
+.price-col {
+    background: #1f283b;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+.price-col p {
+    font-size: 22px;
+
+}
+
+.price-col h3 {
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+
+}
+
+.price-col h3 span {
+    font-size: 16px;
+
+}
+
+.price-col ul {
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+}
+
+.price-col ul li {
+    margin: 15px 0;
+}
+
+.price-col ul li::before {
+    content: '\2022';
+    color: #e33058;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.price-col button {
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #e33058;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.price-col button:hover {
+    background: #e33058;
+}
+
+.kumush {
+    color: rgb(159, 159, 159);
+    text-shadow: 5px 5px 10px rgb(159, 159, 159);
+}
+
+.oltin {
+    color: rgb(255, 248, 31);
+    text-shadow: 5px 5px 10px rgb(234, 248, 38);
+}
+
+.bronza {
+    color: rgb(89, 72, 49);
+    text-shadow: 5px 5px 10px rgb(89, 72, 49);
+}
+
+
+
+.ballons{
+    position: absolute;
+    z-index: 2;
+}
+#balloon-container {
+    height: 300vh;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: opacity 500ms;
+}
+
+.balloon {
+    height: 125px;
+    width: 105px;
+    border-radius: 75% 75% 70% 70%;
+    position: relative;
+}
+
+.balloon:before {
+    content: "";
+    height: 75px;
+    width: 1px;
+    padding: 1px;
+    background-color: #FDFD96;
+    display: block;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.balloon:after {
+    content: "▲";
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: inherit;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes float {
+    from {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-300vh);
+        opacity: 0;
+    }
+}
+

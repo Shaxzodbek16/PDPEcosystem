@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of courses</title>
+</head>
+<body>
+    <h1>Welcome to our courses page</h1>
+    {%if not is_empty%}
+    <table border="1px solid red" width="100%">
+        <tr> <th>Name</th>
+            <th>Code</th>
+            <th>Start_date</th>
+            <th>Is_active</th>
+        </tr>
+        {% for Speciality in Specialities %}
+        <tr>
+            <td>{{Speciality.name}}</td>
+            <td>{{Speciality.code}}</td>
+            <td>{{Speciality.start_date}}</td>
+            <td>{{Speciality.is_active}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <h1>There are no specialities</h1>
+    {% endif %}
+</body>
+</html>

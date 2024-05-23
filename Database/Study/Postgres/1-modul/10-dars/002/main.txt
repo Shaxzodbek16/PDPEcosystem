@@ -1,0 +1,5 @@
+
+Savol: Qanday qilib custom tablespace yaratish mumkin ?
+
+javob: 
+create tablespace tablespace_name location '/user/Desktop/.....'

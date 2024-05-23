@@ -1,0 +1,10 @@
+Django project ga misol keltiring va uning ichida qanday app lar bo’lishi mumkinligini ayting.
+Misol uchun: pdp_online projectidagi app lar: chat, task, course va boshqalar.
+
+Project name: HOTEL
+App1 name : hotel_online
+App2 name : hotel_chat
+App3 name : hotel_role
+App4 name : hotel_management
+...
+

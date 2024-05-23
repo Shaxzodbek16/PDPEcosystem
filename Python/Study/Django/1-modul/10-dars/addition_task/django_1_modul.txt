@@ -1,0 +1,15 @@
+Django 1-modul uchun loyiha.
+
+Uzum market klonini yaratish:
+
+Saytda turli sotuvchilar tomonidan joylashtiriladigan mahsulatlar sotuvi amalga oshiriladi.
+Saytga sotuvchilar ro`yhatdan o`tib kiradi va shaxsiy kabinetiga kiradi.
+Shaxsiy kabinetda o`zi haqida to`liq ma`lumot va o`zi joylashtirgan mahsulotlar ro`yhati keltiriladi.
+Sotuvchi shaxsiy kabineti orqali o`zi haqida ma`lumotlarini uzgartirishi va mahsulot joylashtirishi, joylashtirgan mahsulotlari ma`lumotlarini o`zgartirishi mumkin bo`ladi.
+Saytdan ro`yhatdan o`magan holatda faqat saytdagi mahsulotlarni ko`rishi, mahsulot qidirishi mumkin bo`lsin.
+
+Ro`yhatdan o`tish, kirish, mahsulot qo`shish kabilar da Formlardan foydalaniladi, django adminga hamma modellar register qilinishi va excelga yuklab olish toollari qo`shilishi kerak.
+User yaratish uchun ushbu linkdagi loyihadan va qoshimcha urganing:
+https://github.com/ozodbekyaxshiboyev/controltech
+
+Va satni pythonanywhere.comga yuklang

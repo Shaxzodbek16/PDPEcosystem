@@ -1,0 +1,10 @@
+“courses” app da  “courses/subject/” yo’liga murojaat 
+qilganda database dagi barcha subject lar ro’yxatini 
+brauzerga chiqaruvchi view yozing.
+Ushbu view biror html templateni render qilish orqali 
+natijani chiqarsin. Agar database da birorta ham subject 
+mavjud bo’lmasa, “No subjects” yozuvini chiqaring.
+Brauzerga chiqarilgan istalgan subject ning ustida bosilganda, 
+ushbu fanning nomi, qaysi yo'nalishlarda o’qitilishi, 
+qaysi o’qituvchilar shu fandan dars berishi haqidagi 
+ma'lumotlarni  brauzerga chiqaruvchi boshqa view ham yozing.

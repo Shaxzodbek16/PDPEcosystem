@@ -1,0 +1,24 @@
+
+if-else statement
+    if ... then ... end if
+    if ... then ... else ... end if
+    if ... then ... elsif ... then ... else ... end if
+
+
+
+
+
+Savol: CASE statement sintaksisi qanday ?
+
+Javob: 
+CASE search-expression
+    when expression [, expression[ ...]] then
+        statement
+    [when expression [, expression[ ...]] then
+        statement
+        ...]
+    [else
+        statement ]
+END CASE;
+
+

@@ -1,0 +1,5 @@
+CONCAT_WS funksiyasini vazifasi nima ?
+to_date funksiyasini vazifasi nima va qandey ishlaydi ?
+like va ilike ni farqi nima ?
+similar to ning vazifasi nima ?
+posix regular expression ning vazifasi nima ?

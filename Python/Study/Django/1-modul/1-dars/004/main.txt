@@ -1,0 +1,5 @@
+TCP va UDP protokollarini taqqoslang.
+
+UDP da paket yetib borish darajasi yuqori emas, lekin ancha tezkor. Bu asosan strimlarda, masalan ovozli, video chatlarda ishlatiladi. one to many.
+
+TCP da ma'lumot yetib borishini ta'minlaydi. Bu ko'proq em-mail, Web brouzerda ishlatiladi. one to one.

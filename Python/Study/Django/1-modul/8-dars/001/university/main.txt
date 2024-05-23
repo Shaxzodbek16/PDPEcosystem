@@ -1,0 +1,1 @@
+{%csrf_token%}  Ikki tomonlaman ximoyani ta'minlaysigan va aynan django yaratgan formadan ma'lumot olayotganlginini tekshiradi.

@@ -1,0 +1,49 @@
+-- Create a table for products
+CREATE TABLE products (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    price NUMERIC,
+    quantity INT
+);
+
+-- Create a table for transactions
+CREATE TABLE transactions (
+    id SERIAL PRIMARY KEY,
+    product_id INT,
+    quantity INT,
+    total_price NUMERIC,
+    transaction_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Function to check product availability
+CREATE OR REPLACE FUNCTION check_availability(product_id INT, quantity INT) RETURNS BOOLEAN AS $$
+DECLARE
+    product_quantity INT;
+BEGIN
+    SELECT quantity INTO product_quantity FROM products WHERE id = product_id;
+    IF product_quantity >= quantity THEN
+        RETURN TRUE;
+    ELSE
+        RETURN FALSE;
+    END IF;
+END; $$ LANGUAGE plpgsql;
+
+-- Procedure to purchase a product
+CREATE OR REPLACE PROCEDURE purchase_product(product_id INT, quantity INT) LANGUAGE plpgsql AS $$
+DECLARE
+    product_price NUMERIC;
+    total_price NUMERIC;
+BEGIN
+    IF check_availability(product_id, quantity) THEN
+        SELECT price INTO product_price FROM products WHERE id = product_id;
+        total_price := product_price * quantity;
+        
+        UPDATE products SET quantity = quantity - quantity WHERE id = product_id;
+
+        INSERT INTO transactions (product_id, quantity, total_price) VALUES (product_id, quantity, total_price);
+        
+        RAISE NOTICE 'Purchase successful. Total price: %', total_price;
+    ELSE
+        RAISE EXCEPTION 'Product is not available in the requested quantity.';
+    END IF;
+END $$;

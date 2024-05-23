@@ -1,0 +1,3 @@
+CPU (protsessor) dan ko’proq foydalanishni talab etadigan vazifalarga misollar keltiring.
+
+Ma'lumotni qayta ishlashda juda ko'p ishlidi, masalan, YouTubedagi video sifatini 720p dan 1080i ga o'tkazganda.

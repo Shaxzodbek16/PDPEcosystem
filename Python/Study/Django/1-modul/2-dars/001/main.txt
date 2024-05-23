@@ -1,0 +1,5 @@
+Frontend va Backend ning vazifalari  nimalardan iborat. Ularni solishtiring.
+
+Frontend bu userga ko'rinadigan qism, user undan ma'lumot oladi va jo'natadi.
+
+Backend bu userga ko'rinmaydigan qism, bunda ayanan o'sha user olayotgan ma'lumotni qabul qiladi, qayta ishlaydi va jo'natadi, saqlaydi va hakazo.

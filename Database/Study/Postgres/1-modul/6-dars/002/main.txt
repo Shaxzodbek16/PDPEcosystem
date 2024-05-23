@@ -1,0 +1,22 @@
+Savol: Standart view qanday ishlaydi ?
+
+Javob: Standard view (create view view_name as(your_query) ) tarzda yoziladi hamda bunda siz yozgan queryingizni qayta-qayta yozmasdan faqatgina (select * from view_name) deb chaqirib qo'ysangiz bo'ldi. view virtual table'lar deb ham ataladi, chunki unda biz oddiy table'da qiloladian ishlarimizni deyarli hammasini qilolamiz.
+
+
+other information for me. 
+    Union Statement ikkita tableni vertikal bir biriga qo'shish uchun ishlatiladi.
+        from table_name union select * from table_name2  -> bu ikkita jadvallardagi ikita bir xil malumotlarning bittasini chiqaradi
+        select * from table_name union all select * from table_name2 -> bu ikkita jadvallard ikkita bir xil malumotlarning ikkalasini ham chiqaradi
+    INTERSECT clause ishlatilishi uniom kabi ishlatiladi va undan farqi, ikkala jadvalda borlarini chiqrishidir.
+    EXCEPT clause A table ni ichidan B tableda bor bo'lgan row'klar olib qolinadi. sintaksis UNION bilan birxil.
+
+
+
+    Standard Views
+        A view is a database object that is of a stored query. A view can be accessed as a virtual table in PostgreSQL. In other words, a PostgreSQL view is a logical table that represents data of one or more underlying tables through a SELECT statement. Notice that a view does not store data physically.
+            • CREATE VIEW view_name As query;
+            • ALTER VIEW old_name RENAME TO new_name;
+            • DROP VIEW [IF EXISTS] view_name [CASCADE | RESTRICT]
+            • DROP VIEW [ IF EXISTS ] View1, View2, ...;
+
+
