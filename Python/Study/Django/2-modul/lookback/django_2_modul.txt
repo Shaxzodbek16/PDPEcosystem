@@ -1,0 +1,25 @@
+Django 2-modul uchun proekt:
+
+CRM tizimini yarating:
+
+Sizda kiyim kechak korxonangiz bor va uning omborxona, sotuv va boshqaruv tizimini avtomatlashtirishingiz kerak.
+
+Sizda mahsulotlar, bir nechta omborxona ishchilar bor, ularning ro`yhatini olib borishingiz kerak.
+Mahsulotlar, omborxona, user(bir nechta role bilan), korxonalar, to`lov kabi bir qancha modellaringiz bo`ladi.
+
+Jarayonlar:
+- omborlarga mahsulat kirimi chiqimi uzgartirishi yozilishi(sotuvchi roli uchun);
+- userlar ustida CRUD;
+- omborxonalar ustida CRUD(bu faqat manager tomidan amalga oshirish mumkin bo`lsin);
+- har sotuvchi qaysidir sotuvchi biriktiriladi va unga ish haqidan tashqari sotuv miqdoridan KPI ajratilinadi
+- korxonlardan mahsulot uchun to`lovlar va xodimlar uchun ish haqi to`lovi ham bo`lishi kerak.
+- manager qaysidir vaqt oralig`idagi to`lovlarni, qaysidir kompaniyaning to`lovlarini ko`ra olishi kerak filter qilib.
+
+Foydalaniladigan texnologiyalar:
+- loyihaga REST APIchiqariladi
+- userlar authentication uchun JWT dan foydalaniladi
+- custom permissionlar yoziladi va ishlatilinadi
+- pagination ishlatilinadi
+- filterlar ishlatilinadi
+- va deploy qilinadi
+- mahsulot qidirish imkoniyati bo`lishi kerak
