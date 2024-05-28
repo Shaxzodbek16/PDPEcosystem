@@ -18,9 +18,24 @@ def get_str() -> str:
             print("Invalid input")
 
 
+def print_(finding: str, user_letter: str) -> str:
+    now_: str = ''
+    for letter in finding:
+        if letter == user_letter:
+            print(user_letter, end=" ")
+            now_ += letter+' '
+        print("_", end=" ")
+        now_ += "_ "
+    return now_
+
+
 def main():
     try:
-        ...
+        while True:
+            user_letter = get_str()
+            now_ = print_(word, user_letter)
+            print(now_)
+
     except KeyboardInterrupt:
         print("\n\nQuiting the game")
         time.sleep(1)
