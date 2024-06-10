@@ -1,3 +1,67 @@
 .idea
 .venv
 venv
+
+# General
+*.class
+*.lock
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Visual Studio Code related
+.classpath
+.project
+.settings/
+.vscode/*
+
+# Flutter repo-specific (Remove if not working on Flutter itself)
+/bin/cache/
+/bin/internal/
+
+# Flutter build outputs
+build/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Pods/
+ios/build/
+
+# Android build outputs
+android/.gradle/
+android/.cxx/
+android/app/build/
+android/build/
+
+# macOS build outputs
+macos/Flutter/App.framework
+macos/Flutter/Flutter.framework
+macos/Runner.xcworkspace/
+
+# Web build outputs
+web/public/
+web/icons/
+
+# Miscellaneous generated files
+coverage/
+pubspec.lock
+
+# Secrets, API keys, and sensitive files
+*.env
+*.pem
+*.keystore
+
+# Editor-specific temporary files
+*.tmp
+*.swx
+*~
