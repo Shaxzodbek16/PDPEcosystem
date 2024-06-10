@@ -11,8 +11,12 @@ def get_int(prompt: str) -> int:
 			print("Please enter a number from 1000 to 10000")
 
 
-def main():
+def similar_number(user: int, random: int = random_number) -> int:
 	pass
+
+
+def main():
+	user_input = get_int("Please enter a number between 1000 and 10000: ")
 
 
 if __name__ == '__main__':
