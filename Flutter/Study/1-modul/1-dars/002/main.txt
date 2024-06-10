@@ -8,7 +8,6 @@ Javob:
 Javob:
     Dastur muayyan vazifani bajarish yoki muayyan maqsadga erishish uchun dasturlash tilida yozilgan ko'rsatmalar to'plami yoki kodlar ketma-ketligini anglatadi.
 
-
 • Ilova nima?
 javob:
     • Ilova (application, app) - bu foydalanuvchi uchun qulay bo'lgan tarzda muayyan xususiyatlarni birlashtirgan, dasturiy ta'minot.
@@ -53,7 +52,7 @@ Javob:
 
 • Qanday ilovalar hybrid application lar hisoblanadi?
 Javob:
-        • Hybrid apps bu ham native, ham web ilovalarni yaratish xususiyatlarining birikmasidir. Ishlab chiquchilar bunday ilovalarga moyil, chunki ular turli platformalar va operatsion tizimlarda kodni qayta ishlatish moslashuvchanligini skriptda juda oz yoki hech qanday o'zgartirishlarsiz ta'minlaydi.
+    • Hybrid apps bu ham native, ham web ilovalarni yaratish xususiyatlarining birikmasidir. Ishlab chiquchilar bunday ilovalarga moyil, chunki ular turli platformalar va operatsion tizimlarda kodni qayta ishlatish moslashuvchanligini skriptda juda oz yoki hech qanday o'zgartirishlarsiz ta'minlaydi.
 
 • Cross-Platform nima?
 Javob:
@@ -73,21 +72,34 @@ Javob:
     • Dart - tur xavfsizligi ta'minlangan til. (Type safety)
     • Dart o'zining ovozli null xavfsizligiga ega. (Sound null safety)
 
-
 • void kalit so'zi nima ma'noni anglatadi?
 Javob:
+    Hech qanday qiymat qaytarmaydi degan ma'noni bildiradigan kalit so'z
 
 • Har bir amaldan so'ng nega ";" qo'yilishi kerak?
 Javob:
+    ";"(semicolon) belgisi ayni bir buyruq yozib bo'linganini bildiradi.
 
 • main() - qanday funksiya?
 Javob:
+    Asosiy funcsiya, dasturni ishga tushirib beruvchi funcsiya hisoblanadi.
 
 • print - qanday funksiya?
 Javob:
+    print() - bu funcsiya ichiga nima yozsak shuni chiqarib beruvchi funcsiya
 
 • Comment nima?
 Javob:
+    Comment - dart kompilyatori tomonidan e'tiborga olinmaydigan belgilar yoki matn hisoblanadi.
 
 • Dart tilida necha xil kommentlar bor va ularni nima maqsadda ishlatamiz?
 Javob:
+    Commeentlar 4 xil bo'ladi.
+    • Single-line comments: // your single line comment
+    • Multi-line comments: /* your multi-line comment */
+    • Documentation comments:
+    • Single-line documentation comments: /// your single line comment
+    • Multi-line documentation comments: /** your multi-line comment
+    **/
+    • Documentation commentlar MarkDown formatini ham qo'llab quatlaydi!
+    U yozgan kodimiz nima qilishiga umumiy izoh.
