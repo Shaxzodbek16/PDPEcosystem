@@ -1,0 +1,105 @@
+• Dasturlash nima?
+Javob:
+    Dasturlash - bu kompyuter bajarishi mumkin bo'lgan ko'rsatmalar to'plamini yozish, test qilib ko'rish va saqlash orqali kompyuter dasturlari yoki dasturiy ilovalarni yaratish jarayoni.
+    Dasturlash - bu muammolarni hal gilishning ijodiy jarayoni bo'lib, ishlab chiquchilarga web, mobil, desktop ilovalari, o'yinlar, sun'iy intellekt tizimlari va boshqalarni o'z ichiga olgan keng doiradagi dasturiy ilovalarni yaratishga
+    imkon beradi.
+
+• Dastur nima?
+Javob:
+    Dastur muayyan vazifani bajarish yoki muayyan maqsadga erishish uchun dasturlash tilida yozilgan ko'rsatmalar to'plami yoki kodlar ketma-ketligini anglatadi.
+
+• Ilova nima?
+javob:
+    • Ilova (application, app) - bu foydalanuvchi uchun qulay bo'lgan tarzda muayyan xususiyatlarni birlashtirgan, dasturiy ta'minot.
+    • Ilovalar asosiy funktsiyalarni bajaradigan oddiy dasturlardan tortib, yuqori
+    darajadagi imkoniyatlarga ega murakkab, boy dasturiy ta'minotgacha bo'lishi mumkin.
+
+• Qanday ilova turlarini bilasiz?
+Javob:
+    • Kompyuter ilovalar - desktop applications
+    • Web ilovalar - web applications
+    • Mobil ilovalar - mobile applications or mobile apps
+    • Server ilovalar - server applications
+    • Komputer ilovalari: Bular stol komputeri yoki noutbuklarida ishlashga mo'jallangan dasturlardir. Masalan, word, photoshop, web-brauzerlar, media playerlar va boshqalar.
+    • Web-ilovalar: web-brauzerlar orqali kirish mumkin bo'lgan dasturlar. Ular ginternet orgali ishlaydi va turli qurilmalarning brauzerlari orqali foydalanish mumkin. Masalan, email xizmatlari, qidiuv tizimlari, tarjimonlar va h.k.
+    • Mobil ilovalar: smartfon va planshetlar uchun maxsus ishlab chiqilgan bo'lib, to'g'ridan-to'g'ri mobil quilmaga o'rnatiladi va ishlaydi, uning sensorli ekran, kamera va joylashuv izmatlari kabi xususivatlaridan foydalanadi.
+    • Server ilovalari: bu dasturlar serverlarda ishlaydi va mijoz qurilmalariga xizmatlar yoki resurslarni taqdim etadi. Ular ma'lumotlarni qayta ishlash, ma'lumotlar bazasini boshqarish, fayllarni almashish va tarmoq aloqasi kabi vazifalarni bajaradi. Masalan, veb-serverlar, elektron pochta serverlari, ma'lumotlar bazasi serverlari va bulutga asoslangan xizmatlar.
+
+• Ma’lumotlar bazasi (database) nima?
+Javob:
+    • Ma'lumotlar bazasi (Database) - ilovaning barcha ma'lumotlarini saqlovchi hotira maydoni. Jumladan foydalanuvchilarning ism - sharifi, telefon raqami, email, kredit karta raqamlari, o'tkazmalar tarixi va shu kabi ma' lumotlar saqlanadi.
+
+• Server nima?
+Javob:
+     • Server - ma'lumotlar bazasi va turli so'rovlarni boshqarib, clientlarga xizmatlar, resurslar va markazlashtirilgan boshqaruvni taqdim etadi
+
+• Client (mijoz) nima?
+Javob:
+    • Mijoz (Client) - ilovaning funksionaligiga asoslangan holda turli xizmatlar yoki resurslardan foydalanish imkoniyatini beruvchi qurilma.
+
+• Network (tarmoq) nima?
+Javob:
+    • Tarmoq (Network) - client va serverning muloqotini ta'minlovchi vosita hisoblanadi.
+
+• Qanday ilovalar web application lar hisoblanadi?
+Javob:
+    • Web apps - App Store yoki Play Market orqali qurilmaga o'rnatishni talab qilmaydigan responsiv veb-saytlardir. Buning o'rniga, ularga komputer yoki mobil telefonlarning brauzerlar orqali kirish mumkin.
+
+• Qanday ilovalar native application lar hisoblanadi?
+Javob:
+    • Native apps - bitta platforma uchun maxsus ishlab chiqilgan. Shuning uchun ular tez va yuqori darajali sifatni ta'minlaydi. Ularni turli xil ilovalar do'konlaridan yuklab olish mumkin va brauzerlar orqali kirish mumkin emas.
+     Shuning uchun, Native ilovalarda kodni qayta ishlatish mumkinligi minimaldir.
+
+• Qanday ilovalar hybrid application lar hisoblanadi?
+Javob:
+    • Hybrid apps bu ham native, ham web ilovalarni yaratish xususiyatlarining birikmasidir. Ishlab chiquchilar bunday ilovalarga moyil, chunki ular turli platformalar va operatsion tizimlarda kodni qayta ishlatish moslashuvchanligini skriptda juda oz yoki hech qanday o'zgartirishlarsiz ta'minlaydi.
+
+• Cross-Platform nima?
+Javob:
+    • Kross-platforma dasturiy ta'minot ilovalari yoki texnologiyalarining bir nechta platformalarda yoki operatsion tizimlarda minimal yoki hech qanday o'zgartirishlarsiz ishlash qobiliyatini anglatadi.
+    • Bu shuni anglatadiki, bitta kod bazasi turli platformalarda ishlab chiqilishi va joylashtirilishi mumkin, bu dasturdan foydalanuvchilar tomonidan turli quilmalar va operatsion tizimlarda foydalanishga imkon beradi.
+    • Platforma deganda asosan Windows, Mac OS, Android yoki iOS kabi operatsion tizim
+
+• Framework nima?
+Javob:
+    • Dasturlashda Framework - bu development jarayonini tezlashtirish uchun moslashtirilgan tayyor komponentlar yoki yechimlarni taqdim etadigan vositadir. U ma'lum bir dasturlash tiliga asoslangan bo'ladi.
+
+• Dart?
+Javob:
+    Dart - bu Google tomonidan ishlab chiqilgan dasturlash tili. U web, mobile va desktop ilovalarni ishlab chiqish uchun mos bo'lgan umumiy maqsadli til bo'lib ishlab chiqilgan.
+    • Dart - bu mijoz uchun optimallashtirilgan til. (client-optimized)
+    • Dart o'zining garbage collectoriga ega bolgan OOP ga asoslangan til.
+    • Dart - tur xavfsizligi ta'minlangan til. (Type safety)
+    • Dart o'zining ovozli null xavfsizligiga ega. (Sound null safety)
+
+• void kalit so'zi nima ma'noni anglatadi?
+Javob:
+    Hech qanday qiymat qaytarmaydi degan ma'noni bildiradigan kalit so'z
+
+• Har bir amaldan so'ng nega ";" qo'yilishi kerak?
+Javob:
+    ";"(semicolon) belgisi ayni bir buyruq yozib bo'linganini bildiradi.
+
+• main() - qanday funksiya?
+Javob:
+    Asosiy funcsiya, dasturni ishga tushirib beruvchi funcsiya hisoblanadi.
+
+• print - qanday funksiya?
+Javob:
+    print() - bu funcsiya ichiga nima yozsak shuni chiqarib beruvchi funcsiya
+
+• Comment nima?
+Javob:
+    Comment - dart kompilyatori tomonidan e'tiborga olinmaydigan belgilar yoki matn hisoblanadi.
+
+• Dart tilida necha xil kommentlar bor va ularni nima maqsadda ishlatamiz?
+Javob:
+    Commeentlar 4 xil bo'ladi.
+    • Single-line comments: // your single line comment
+    • Multi-line comments: /* your multi-line comment */
+    • Documentation comments:
+    • Single-line documentation comments: /// your single line comment
+    • Multi-line documentation comments: /** your multi-line comment
+    **/
+    • Documentation commentlar MarkDown formatini ham qo'llab quatlaydi!
+    U yozgan kodimiz nima qilishiga umumiy izoh.
