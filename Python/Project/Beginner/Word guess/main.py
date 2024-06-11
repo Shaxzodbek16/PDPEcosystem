@@ -51,6 +51,7 @@ def main():
                 break
             if count == 0:
                 print("\nYou have no more chance to find the word!")
+                break
 
     except KeyboardInterrupt:
         print("\n\nQuiting the game")
