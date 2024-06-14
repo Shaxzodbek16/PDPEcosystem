@@ -24,6 +24,13 @@ jobs:
     - name: Install Requirements
       run:
         pip install -r requirements.txt
+    - name: Check Directory Structure
+      run: |
+        
+        pwd
+        cd Netflix
+        ls -l
+        pip install setuptools
     - name: Run Tests
-      run:
-        python manage.py test
+      run: python manage.py test
+      working-directory: Netflix
