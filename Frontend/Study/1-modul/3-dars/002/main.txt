@@ -1,0 +1,4 @@
+• Attributlar doim ochilgan tegda boladi.
+• Attributlar element hagida brovserga qo'shimcha
+    ma'lumot beradi, misol uchun link qayega olib
+    borishi yoki rasm manzili

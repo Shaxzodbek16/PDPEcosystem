@@ -1,0 +1,3 @@
+"download" atributi.
+Misol uchun:
+    <a href="main.jpeg" download>Download picture</a>
