@@ -47,7 +47,7 @@ List<Product> products = [
 
 
     Product(
-    title: 'Power bank high electr',
+    title: 'Power bank high elector',
     category: 'Electronics',
     price: 99.99,
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxa9ujqTaTBv21ulICS_Cwkqn8TgaE6iEUPnNpNwOUXw&s',
