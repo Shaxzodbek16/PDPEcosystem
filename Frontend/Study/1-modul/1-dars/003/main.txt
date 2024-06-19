@@ -1,0 +1,3 @@
+Html orqali webni tarkibi yoziladi, css bn ishlov beriladi,
+JavaScript bilan ko'proq jonlantirish mumkin yani html va
+css ustidan amal bajara oladi.

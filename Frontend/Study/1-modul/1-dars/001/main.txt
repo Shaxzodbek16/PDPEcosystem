@@ -1,0 +1,1 @@
+web sahifa 2 qismdan tashkil topadi, frontend va backend.

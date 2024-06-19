@@ -1,0 +1,3 @@
+Html bu skelet,
+Css bu dizayn,
+Javascript bu ko'p imkon qo'shish.
