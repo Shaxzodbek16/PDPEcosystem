@@ -1,1 +1,1 @@
-‹!DOCTYPE html >
+‹!DOCTYPE html> va u tegning vazifasi biz aynan HTML 5 versiyasida yozayotganimizni bildiradi.
