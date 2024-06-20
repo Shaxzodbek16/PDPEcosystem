@@ -1,0 +1,14 @@
+<video controls>
+    <source src="path_to_video" type="video/mp4">
+    """alt field""
+    Your brazer does not support the video
+</video>
+
+Javob:
+    controls
+Qo'shimcha:
+    muted
+    loop
+    autoplay
+    width
+    height

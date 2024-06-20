@@ -1,0 +1,1 @@
+Rasm qo'yishda yopilish tegi bo'lmaydi va u <img/> orqali rasm qo'yiladi.

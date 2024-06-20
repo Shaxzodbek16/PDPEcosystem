@@ -1,0 +1,2 @@
+<img src="img_path" alt="about img"/>
+Ushbu alt atributi rasmlar ochmay qolganda rasm haqidagi yozuvli ma'lumotni chiqarib beradi.

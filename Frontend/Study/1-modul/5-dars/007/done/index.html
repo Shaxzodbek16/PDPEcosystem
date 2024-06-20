@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Account Overview</title>
+    <style>
+body { font-family: sans-serif; }
+.container { width: 80%; margin: 0 auto; }
+.account-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+thead th { background-color: #f5f5f5; }
+.name-container { display: flex; flex-direction: column; }
+.name { font-weight: bold; }
+.id { font-size: smaller; color: #777; }
+.positive{color: #09f50e;}
+.negative { color: #ff4d4d; }
+.status {
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.active { background-color: #d4edda; color: #155724; }
+.inactive { background-color: #f8d7da; color: #721c24; }
+
+.actions { text-align: right; }
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  width: 25px;
+}
+
+.actions-header { text-align: right; }
+.last{
+    color: #ababab;
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Account Overview</h2>
+    <table class="account-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Rate (INR)</th>
+          <th>Balance (INR)</th>
+          <th>Deposit (INR)</th>
+          <th>Status</th>
+          <th class="actions-header">...</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="name-container">
+              <span class="name">Kadin Herwitz</span>
+              <span class="id">5684236583</span>
+            </div>
+          </td>
+          <td>Lorem ipsum dolor sit amet, consectetur...</td>
+          <td>70.00 <br>INR</td>
+          <td class="negative">-270.00 <br>INR</td>
+          <td>500.00 <br>INR</td>
+          <td><span class="status active">ACTIVE</span></td>
+          <td class="actions">
+           <img class="icon-button" src="trash-icon.svg" alt="Delete">
+          </td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+          <td>
+            <div class="name-container">
+              <span class="name">Cristofer Korsgaard</span>
+              <span class="id">5684236583</span>
+            </div>
+          </td>
+          <td>Lorem ipsum dolor sit amet, consectetur...</td>
+          <td>70.00<br> INR</td>
+          <td class="positive">270.00 <br>INR</td>
+          <td>500.00<br> INR</td>
+          <td><span class="status active">ACTIVE</span></td>
+          <td class="actions">
+          <img class="icon-button" src="trash-icon.svg" alt="Delete">
+          </td>
+        </tr>
+
+        </tbody>
+              <tbody>
+        <tr>
+          <td>
+            <div class="name-container">
+              <span class="name">Omar Workman</span>
+              <span class="id">5684236583</span>
+            </div>
+          </td>
+          <td>Lorem ipsum dolor sit amet, consectetur...</td>
+          <td>80.00 <br>INR</td>
+          <td class="negative">-20.00<br> INR</td>
+          <td>500.00<br> INR</td>
+          <td><span class="status inactive">INACTIVE</span></td>
+          <td class="actions">
+           <img class="icon-button" src="trash-icon.svg" alt="Delete">
+          </td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+          <td>
+            <div class="name-container">
+              <span class="name">Tatiana Westervelt</span>
+              <span class="id">5684236583</span>
+            </div>
+          </td>
+          <td>Lorem ipsum dolor sit amet, consectetur...</td>
+          <td>70.00<br> INR</td>
+          <td class="positive">600.00<br> INR</td>
+          <td>500.00<br> INR</td>
+          <td><span class="status inactive">INACTIVE</span></td>
+          <td class="actions">
+          <img class="icon-button" src="trash-icon.svg" alt="Delete">
+          </td>
+        </tr>
+
+        </tbody>
+              <tbody>
+        <tr>
+          <td>
+            <div class="name-container">
+              <span class="name">Jakob Bergson</span>
+              <span class="id">5684236583</span>
+            </div>
+          </td>
+          <td>Lorem ipsum dolor sit amet, consectetur...</td>
+          <td>75.00<br> INR</td>
+          <td class="negative">-350.00 <br>INR</td>
+          <td>500.00 <br>INR</td>
+          <td><span class="status active">ACTIVE</span></td>
+          <td class="actions">
+           <img class="icon-button" src="trash-icon.svg" alt="Delete">
+          </td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+          <td>
+            <div class="name-container">
+              <span class="name">Karter Rosser</span>
+              <span class="id">5684236583</span>
+            </div>
+          </td>
+          <td>Lorem ipsum dolor sit amet, consectetur...</td>
+          <td>70.00 <br>INR</td>
+          <td class="negative">-270.00 <br>INR</td>
+          <td>500.00 <br>INR</td>
+          <td><span class="status active">ACTIVE</span></td>
+          <td class="actions">
+          <img class="icon-button" src="trash-icon.svg" alt="Delete">
+          </td>
+        </tr>
+
+        </tbody>
+              <tbody>
+        <tr>
+          <td>
+            <div class="name-container">
+              <span class="name">Mirasle Septimus</span>
+              <span class="id">5684236583</span>
+            </div>
+          </td>
+          <td>Lorem ipsum dolor sit amet, consectetur...</td>
+          <td>70.00 <br>INR</td>
+          <td class="negative">-2070.00 <br>INR</td>
+          <td>500.00 <br>INR</td>
+          <td><span class="status active">ACTIVE</span></td>
+          <td class="actions">
+           <img class="icon-button" src="trash-icon.svg" alt="Delete">
+          </td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+          <td>
+            <div class="name-container">
+              <span class="name">Kianna Baptista</span>
+              <span class="id">5684236583</span>
+            </div>
+          </td>
+          <td>Lorem ipsum dolor sit amet, consectetur...</td>
+          <td>70.00 <br>INR</td>
+          <td class="negative">-270.00 <br>INR</td>
+          <td>500.00 <br>INR</td>
+          <td><span class="status inactive">INACTIVE</span></td>
+          <td class="actions">
+          <img class="icon-button" src="trash-icon.svg" alt="Delete">
+          </td>
+        </tr>
+
+        </tbody>
+              <tbody>
+        <tr>
+          <td>
+            <div class="name-container">
+              <span class="name">Jasur Shermatov</span>
+              <span class="id">5684236583</span>
+            </div>
+          </td>
+          <td>Lorem ipsum dolor sit amet, consectetur...</td>
+          <td>70.00 <br>INR</td>
+          <td class="positive">460.00 <br>INR</td>
+          <td>500.00 <br>INR</td>
+          <td><span class="status inactive">INACTIVE</span></td>
+          <td class="actions">
+           <img class="icon-button" src="trash-icon.svg" alt="Delete">
+          </td>
+        </tr>
+
+        </tbody>
+        <tbody>
+        <tr>
+          <td>
+            <div class="name-container">
+              <span class="name">Haylie Rosser</span>
+              <span class="id">5684236583</span>
+            </div>
+          </td>
+          <td>Lorem ipsum dolor sit amet, consectetur...</td>
+          <td>70.00 <br>INR</td>
+          <td class="last">0.00 <br>INR</td>
+          <td>500.00 <br>INR</td>
+          <td><span class="status active">ACTIVE</span></td>
+          <td class="actions">
+          <img class="icon-button" src="trash-icon.svg" alt="Delete">
+          </td>
+        </tr>
+
+        </tbody>
+    </table>
+  </div>
+</body>
+</html>

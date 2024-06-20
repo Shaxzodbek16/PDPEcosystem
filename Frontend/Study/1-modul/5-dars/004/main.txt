@@ -1,0 +1,8 @@
+<th> bilan <td> tegining farqi:
+<th> bu sarlavha
+<td> bu ma'lumot
+misol uchun:
+    Telefon raqam
+    +998 91 526 01 12
+   Bu yerda telefon raqam degan yozuv <th>
+   telefon raqamni o'zi <td> bo'ladi.
