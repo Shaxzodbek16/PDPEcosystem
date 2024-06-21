@@ -1,0 +1,4 @@
+HTMLda CSSdan foydalanishning 3 xil usuli bor:
+    1. inline
+    2. internal
+    3. external

@@ -1,0 +1,47 @@
+‹input>
+Foydalanuvchidan malumot olish
+
+< input type="text"›
+Inputning matn olish turi
+
+< input type="number"›
+Inputning raqam olish turi
+
+< input type="date" ›
+Inputning kalendar olish turi
+
+‹ input type="password">
+Inputning parol olish turi
+
+‹ input type="file"›
+Inputning fayl olish turi
+
+< input type="checkbox"›
+Inputning pitcha olish turi
+
+< input type="radio"›
+Inputning radio olish turi
+
+< input type="range" ›
+Inputning range olish turi
+
+< input type="color",
+Inputning rang olish turi
+
+< input type="text" placeholder="matn"›
+Inputga yordamchi so'z qo'shish
+
+‹ textarea›‹/textarea>
+Matn yozish uchun joy ochish
+
+< textarea placeholder="matn"›< /textarea>
+Matn yoizsh joyiga yordamchi so'z qo'shish
+
+‹ textarea cols="raqam"›‹/textarea ›
+Matn kiritish joyini uzunligini o'zgartirish
+
+‹ textarea rows="ragam"›‹/textarea>
+Matn kiritish joyini bo'yini uzaytirish
+
+< button› tugmacha nomi ‹ /button >
+Tugmacha qo'yish

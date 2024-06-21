@@ -1,0 +1,43 @@
+.google{
+    text-align: center;
+    letter-spacing: 10px;
+}
+.google div{
+    letter-spacing: -15px;
+    display: inline;
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.google-red{
+    color: rgb(255, 45, 45);
+}
+.google-blue{
+    color: rgba(0, 0, 255, 0.534);
+}
+.google-yellow{
+    color: rgb(211, 211, 33);
+}
+.google-green{
+    color: rgba(0, 178, 0, 0.891);
+}
+.searching-system{
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    text-shadow: 5px 5px #c4c4c4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container p{
+    display: inline;
+}
+.container{
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px dotted skyblue;
+    width: 600px;
+}
+.underline{
+    text-decoration: underline;
+}

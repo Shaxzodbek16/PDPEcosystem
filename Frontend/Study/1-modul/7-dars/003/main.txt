@@ -1,0 +1,2 @@
+CSSda so’zlardagi xarflar orasini malum miqdorda ochish uchun
+letter-spacing xususiyatdan foydalaniladi.

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<style>
+    body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width:300px;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form *{
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.radio-group label {
+    margin-right: 20px;
+}
+
+button[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+</style>
+<body>
+
+    <div class="container">
+        <h2>Ro'yhatdan o'tish uchun malumotlaringizni yozing!</h2>
+
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Ismingiz">
+            </div>
+
+            <div class="form-group">
+                <input type="date" placeholder="Tug'ilgan kuningiz">
+            </div>
+
+            <div class="form-group">
+                <input type="tel" placeholder="Telefon raqamingiz">
+            </div>
+
+            <div class="form-group">
+                <select>
+                    <option value="">Shaharingiz</option>
+                    <option value="Samarqand">Samarqand</option>
+                </select>
+            </div>
+
+            <div class="form-group radio-group">
+                <label>
+                    <input type="radio" name="gender"> Erkak
+                </label>
+                <label>
+                    <input type="radio" name="gender"> Ayol
+                </label>
+            </div>
+
+            <div class="form-group">
+                <textarea placeholder="O'zingiz haqingizda qisqacha yozing..." rows="15"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>
+                    <input type="checkbox"> Shartlarga roziman
+                </label>
+            </div>
+
+            <button type="submit">Ro'yxatdan o'tish</button>
+        </form>
+    </div>
+
+</body>
+</html>

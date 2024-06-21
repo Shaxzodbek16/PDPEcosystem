@@ -1,0 +1,4 @@
+CSS selektorlari:
+    1. teg nomi
+    2. class
+    3. id
