@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../images/paris-image.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+nav{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links a{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin-left: 20px;
+}
+.links p{
+    color: #fff;
+    padding: 20px;
+    background-color: rebeccapurple;
+    margin-left: 20px;
+}
+.hamburger div {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+.hamburger{
+    margin-left: 20px;
+}

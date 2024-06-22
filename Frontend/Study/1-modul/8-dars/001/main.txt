@@ -1,0 +1,2 @@
+CSSning height xususiyati balandlik 
+va width xususiyati uzunlikni bildiradi.

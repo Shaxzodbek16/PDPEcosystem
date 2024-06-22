@@ -1,0 +1,3 @@
+Padding va Margin farqini:
+    Margin tashqari va element chegarasi orasidangi joyni nazorat qilishga ishlatiladi.
+    Padding element chegarasi hamda elementning contenti orasidagi masofani nazorat qiladi.
