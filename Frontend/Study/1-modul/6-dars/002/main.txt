@@ -1,1 +1,14 @@
-Semantik deganda ma'lum bir ajratish, yani wrap qilgan holda ma'lumotlarni bitta qilib ko'rsatish.
+Semantik teglar veb-sahifalarni tuzishda ishlatiladigan HTML elementlar bo'lib, 
+ular sahifa tarkibining mazmunini va tuzilishini anglashga yordam beradi. 
+Ular oddiy div teglardan farqli o'laroq, o'zlari bilan birga ma'lum 
+ma'no-mazmunni ham olib yuradi. Bu esa qidiruv tizimlari va boshqa 
+dasturiy vositalar uchun sahifa tarkibini yaxshiroq tushunish va 
+indekslash imkonini beradi.
+Misol uchun:
+    <header>
+    <nav>
+    <main>
+    <article>
+    <section>
+    <aside>
+    <footer>
