@@ -1,0 +1,1 @@
+:visited pseudo selektori orqali tashrif buyurilgan havolaning rangini o’zgartira olamiz.

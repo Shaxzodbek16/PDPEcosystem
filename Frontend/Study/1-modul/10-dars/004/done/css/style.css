@@ -1,0 +1,136 @@
+*::selection{
+    background-color: black;
+    color: rgb(13, 121, 38);
+}
+body{
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+nav div img{
+    width: 100px;
+}
+nav div a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 20px;
+    padding: 10px 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.5s;
+}
+nav div a:hover{
+    background-color: black;
+    border-radius: 5px;
+    color: #fff;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+.texts{
+    width: 35%;
+    height: auto;
+}
+.links-images{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.texts h1{
+    font-size: 36px;
+    line-height: 50px;
+}
+.texts h1 span{
+    color: rgb(13, 121, 38);
+}
+.texts p{
+    line-height: 25px;
+    color: rgb(122, 122, 122);
+}
+
+.texts a{
+    border-radius: 40px;
+    margin-top: 40px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: white;
+    background-color: rgb(13, 121, 38);
+    padding: 1rem;
+    font-size: 20px;
+    width: 40%;
+    margin: 20px auto 0 auto;
+    transition: 1s;
+}
+.texts a:hover{
+    color: rgb(13, 121, 38);
+    background-color:#fff;
+}
+.texts a:active{
+    background-color: rgb(13, 121, 38);
+    transform: scale(1.1);
+    color: #fff;
+    transition: .2s;
+
+}
+
+.image img{
+    width: 400px;
+    margin: 0 180px 0 0;
+    animation-name: cub;
+    animation-duration: 0.5s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-iteration-count: 1;
+}
+.links p a{
+    text-decoration: none;
+    color: black;
+}
+
+.circle{
+    width: 1200px;
+    height: 1200px;
+    background-color: rgb(13, 121, 38);
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    right: -400px;
+    z-index: -1;
+    animation-name: circle;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: 1;
+}
+
+@keyframes circle{
+    from {
+        top: 0px;
+        right: -800px;
+    }
+    to{
+        right: -400px;
+    }
+}
+
+
+@keyframes cub{
+    from {
+        transform: rotateY(90deg);
+        transform: rotateX(180deg);
+        transform: scale(1.4);
+    }
+    to{
+        transform: scale(1);
+        transform: initial;
+    }
+}

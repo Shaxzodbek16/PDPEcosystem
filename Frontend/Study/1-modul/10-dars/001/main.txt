@@ -1,0 +1,3 @@
+position relative va absolute xususiyatlari orasidagi farq:
+    relative ketma-ketlik(oqim) bo'yucha joylashtirsa bo'ladi.
+    absolute o'zidan tashqaridagi elementga nisbatan joylashtirsa bo'ladi.

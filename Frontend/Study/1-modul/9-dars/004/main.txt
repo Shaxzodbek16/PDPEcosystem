@@ -1,0 +1,2 @@
+:hover pseudi selektorining vazifasi element ustiga curson borganda
+shu :hover ichidagi codeni ishlatish.

@@ -1,0 +1,5 @@
+Proekt uchun qisqacha qo'llanma (foydalaniladigan texnalogiyalar) : 
+Rasmlarni yonma-yon joylashtirish uchun display : inline-block ; dan foydalanib bajariladi. 
+Rasmlar ustidagi yozuvlarni joylashtirish uchun esa position orqali qilinadi Linklarga cursor borganda pastida border chiqishi hover orqali qilinadi. 
+Qo'shimch esa ushbu havola orqali o'tib display : flex ni o'rganib, bajarasiz : https://www.w3schools.com/css/css3_flexbox.asp 
+Project : https://www.figma.com/file/LmQLVG5nV4KtHYKrIsXYHV/Front-end-1-modul-uchun?type=design&node-id=1%3A2&mode=design&t=j9dGjnssIyGpJtWO-1

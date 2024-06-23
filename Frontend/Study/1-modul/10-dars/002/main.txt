@@ -1,0 +1,1 @@
+position xususiyatining fixed qiymati orqali elementni ma'lum bir joyga yopishtirib qoya olamiz.

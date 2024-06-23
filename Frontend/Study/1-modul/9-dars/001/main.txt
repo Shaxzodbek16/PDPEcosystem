@@ -1,0 +1,1 @@
+animation-duration harakatning qancha davom etishini belgilash vazifasini bajaradi.

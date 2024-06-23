@@ -1,0 +1,4 @@
+display xususiyatining inline va inline-block qiymatlari orasidagi farq:
+    inline bu width va heigt olmaydi, lekin display: inline-block degan property bilan ta'minlansa width va heightni qabul qila boshlaydi.
+    Yani asosiy farqi inline width va height olmasa, inline-block oladi.
+    
