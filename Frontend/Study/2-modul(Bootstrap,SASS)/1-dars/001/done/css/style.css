@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --border-radius: 5px;
+}
+
+body {
+    height: 100vh;
+}
+
+.row1,
+.row2 {
+    height: calc(40% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    width: 100%;
+}
+
+.row1__1 {
+    height: calc(100% - 5px);
+    border-radius: var(--border-radius);
+    background-color: rgb(68, 68, 255);
+    width: calc(50% - 5px);
+}
+
+.row1__2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(50% - 5px);
+    margin: 10px;
+}
+
+.row1__2__1 {
+    height: calc(100% - 5px);
+    border-radius: var(--border-radius);
+    width: calc(50% - 5px);
+    background-color: rgb(230, 85, 85);
+}
+
+.row1__2__2 {
+    height: calc(100% - 5px);
+    ;
+    border-radius: var(--border-radius);
+    width: calc(50% - 5px);
+    background-color: rgb(230, 85, 85);
+}
+
+.row2 {
+    height: calc(60% - 10px);
+}
+
+.row2__1 {
+    height: calc(100%);
+    border-radius: var(--border-radius);
+    width: calc(50%);
+}
+
+.row2__1__1,
+.row2__1__2 {
+    height: calc(50% - 5px);
+    border-radius: var(--border-radius);
+    width: calc(100%);
+    background-color: rgb(240, 207, 85);
+}
+
+.row2__2 {
+    margin: 10px;
+    height: calc(100%);
+    border-radius: var(--border-radius);
+    width: calc(50%);
+    background-color: rgb(168, 85, 240);
+}
+
+.row2__1__1 {
+    margin-bottom: 5px;
+}
+
+.row2__1__2 {
+    margin-top: 5px;
+}
