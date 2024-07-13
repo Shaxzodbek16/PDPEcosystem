@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --nav-color: rgb(0, 255, 204);
+    --aside-1-color: rgb(0, 132, 255);
+    --aside-2-color: rgb(111, 0, 255);
+    --main-color: rgb(226, 49, 0);
+    --border-radius: 10px;
+
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+header{
+    height: calc(10% - 5px);
+    margin-bottom: 5px;
+}
+
+nav{
+    height: 100%;
+    background-color: var(--nav-color);
+}
+
+.wrapper{
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+aside:first-child{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+aside:first-child div{
+    margin: 5px 5px 5px 10px;
+    background-color: var(--aside-1-color);
+    border-radius: var(--border-radius);
+}
+
+aside:first-child div:first-child, aside:first-child div:nth-child(2){
+    width: calc(100% - 15px);
+    height: calc(40% - 10px);
+}
+
+
+aside:first-child div:last-child{
+    width: calc(100% - 15px);
+    height: calc(30% - 10px);
+}
+
+main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.main1{
+    width: calc(100% - 10px);
+    height: calc(60% - 10px);
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+    margin: 5px;
+}
+
+.main2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40%;
+}
+
+.main21, .main22{
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+    height: (100%);
+}
+.main21{
+    margin:5px;
+    height: calc(100% - 10px);
+    width: calc(70% - 10px);
+}
+.main22{
+    margin:5px;
+    height: calc(100% - 10px);
+    width: calc(30% - 10px);
+}
+
+aside:last-child{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+}
+
+aside:last-child div{
+    margin: 5px 10px 5px 5px;
+    background-color: var(--aside-2-color);
+    border-radius: var(--border-radius);
+}
+
+.aside21{
+    width: calc(100% - 15px);
+    height: calc(60% - 10px);
+}
+
+.aside22{
+    width: calc(100% - 15px);
+    height: calc(40% - 10px);
+}
+
+/* 60% */
+
