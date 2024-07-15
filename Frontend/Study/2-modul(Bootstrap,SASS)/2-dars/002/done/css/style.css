@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-box-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    
+
+}
+
+.card {
+    position: relative;
+    width: 360px;
+    height: 528px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.info-icon {
+    cursor: context-menu;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+.line1 {
+    width: 360px;
+    height: 216px;
+    border-radius: 16px 16px 0px 0px;
+
+}
+
+.line1 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.line2,
+.line3,
+.line4,
+.line5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 24px;
+}
+
+.line2 h1 {
+    font-family: DM Serif Display;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    height: 24px;
+
+
+}
+
+.icons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.icons div:first-child {
+    background-color: rgba(248, 89, 59, 1);
+}
+
+.icons div:last-child {
+    background-color: rgba(255, 194, 43, 1);
+    ;
+}
+
+.line3 p {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: rgba(110, 121, 140, 1);
+    word-spacing: 5px;
+    text-align: left;
+}
+
+.line3 {
+    width: 312px;
+    height: 75px;
+
+
+}
+
+.line4 {
+    width: 312px;
+    height: 25px;
+    font-family: Open Sans;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: left;
+    color: rgba(165, 173, 187, 1);
+
+
+}
+
+.line5 p {
+    font-family: DM Serif Display;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+
+}
+
+.line5 button {
+    width: 114px;
+    height: 44px;
+    border: none;
+    background-color: rgba(46, 204, 113, 1);
+    border-radius: 8px;
+
+}
+
+.line5 button a {
+    text-decoration: none;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.18em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
