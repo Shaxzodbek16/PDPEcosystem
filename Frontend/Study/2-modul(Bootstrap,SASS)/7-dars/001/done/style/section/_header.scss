@@ -1,0 +1,209 @@
+@import "../utils/variables";
+
+header {
+    @include do-flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url("header-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    nav {
+        @include do-flex;
+        width: calc(100% - $defaultMargin);
+        height: 110px;
+        border-bottom: 1px solid #D0C7C7;
+
+        .logo {
+            @include do-flex;
+            gap: 26px;
+
+            img {
+                width: 86px;
+                height: 86px;
+            }
+
+            h1 {
+                font-family: Inter;
+                font-size: 46px;
+                font-weight: 700;
+                line-height: 55.67px;
+                text-align: left;
+                color: #FFFFFF;
+
+            }
+        }
+
+        .links {
+            @include do-flex;
+            gap: 20px;
+
+            a {
+                font-family: Inter;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 29.05px;
+                text-align: left;
+                color: #FFFFFF;
+                text-decoration: none;
+                @include do-flex;
+                gap: 10px;
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+
+            }
+
+        }
+    }
+
+    .contents {
+        width: 100%;
+        @include do-flex;
+        flex-direction: column;
+        gap: 86px;
+
+        .header-texts {
+            @include do-flex;
+            flex-direction: column;
+            gap: 19px;
+
+            h1 {
+                font-family: Inter;
+                font-size: 120px;
+                font-weight: 700;
+                line-height: 145.23px;
+                text-align: left;
+                color: #FFFFFF;
+            }
+
+            p {
+                font-family: Inter;
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 60.51px;
+                text-align: left;
+                color: #FFFFFF;
+
+            }
+        }
+
+        .header-sections {
+            width: 100%;
+            @include do-flex;
+            flex-direction: column;
+            gap: 62px;
+
+            .header-sections-p {
+                @include do-flex;
+                gap: 22px;
+
+                p {
+                    padding: 33px 90.5px;
+                    background-color: #FFFFFFB2;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 21.78px;
+                    text-align: left;
+                    color: #000;
+                    border-radius: 5px
+                }
+            }
+
+            .header-sections-inputs {
+                @include do-flex;
+                gap: 20px;
+
+                .input-pairs {
+                    button {
+                        width: 221px;
+                        height: 69px;
+                        background-color: #ECA00D;
+                        color: #000;
+                        border: none;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 21.78px;
+                        text-align: center;
+                    }
+
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    gap: 7px;
+
+                    label {
+                        color: #FFFFFF;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 21.78px;
+                        text-align: left;
+                    }
+
+                    div {
+                        input {
+                            width: 221px;
+                            height: 69px;
+                            padding: 25px 18px;
+                            color: #000;
+                            font-family: Inter;
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 21.78px;
+                            text-align: left;
+
+                        }
+
+                        &::placeholder {
+                            font-family: Inter;
+                            font-size: 18px;
+                            font-weight: 700;
+                            line-height: 21.78px;
+                            text-align: left;
+                            color: #000000;
+                            padding: 25px 0 20px 18px;
+                        }
+
+                        input[type="number"] {
+                            width: 143px !important;
+                            height: 69px !important;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .header-footer {
+        @include do-flex;
+        width: 100%;
+        height: 100px;
+        opacity: 0.7;
+        background-color: #FFFFFF;
+
+        p {
+            @include do-flex;
+            padding: 0 142px;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29.05px;
+            text-align: left;
+            color: #000000;
+            gap: 20px;
+
+            img {
+                width: 28px;
+                height: 28px;
+            }
+        }
+    }
+}

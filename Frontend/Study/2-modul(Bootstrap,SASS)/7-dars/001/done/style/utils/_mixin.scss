@@ -1,0 +1,9 @@
+@mixin do-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin card {
+    color: aqua;
+}

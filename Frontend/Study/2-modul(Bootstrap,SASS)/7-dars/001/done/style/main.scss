@@ -1,0 +1,16 @@
+@import "utils/mixin";
+@import "utils/variables";
+
+@import "section/header";
+@import "section/main";
+@import "section/footer";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
