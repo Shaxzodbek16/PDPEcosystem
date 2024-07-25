@@ -1,0 +1,240 @@
+header {
+    padding: 40px 80px;
+    width: 100%;
+    height: 110px;
+
+    nav {
+        width: 100%;
+
+        .nav-container {
+            width: 100%;
+            @include space-between;
+
+            .logo {
+                width: 110px;
+                height: 30px;
+            }
+
+            .links {
+                @include align-items-center;
+
+                a {
+                    @include default-text-style($fontSize: 16px, $fontWeight: 500, $color: $primaryTextColor);
+                    text-decoration: none;
+                    padding: 1rem 2rem;
+                    border-radius: 10px;
+                    transition: 0.4s background-color, 1s color;
+
+                    &:hover {
+                        @include default-text-style($fontSize: 16px, $fontWeight: 500, $color: $secondaryTextColor);
+                        background-color: $lightColor;
+                    }
+                }
+            }
+
+            .social-links {
+                @include align-items-center;
+                gap: 40px;
+
+                i {
+                    font-size: 22px;
+                    color: $primaryTextColor;
+                    cursor: pointer;
+
+                    &:first-child {
+                        &:hover {
+                            color: #4267B2;
+                            text-shadow: 0px 0px 15px rgb(0, 101, 148);
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:hover {
+                            color: #1DA1F2;
+                            text-shadow: 0px 0px 15px #3381b1;
+                        }
+                    }
+
+                    &:last-child {
+                        &:hover {
+                            border-radius: 5px;
+                            background: #d6249f;
+                            color: #fff;
+                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                            box-shadow: 0px 0px 10px #942872;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header-content {
+    width: 100%;
+    height: calc(100vh - 110px);
+    @include space-between;
+    gap: 40px;
+
+    div {
+        background-color: #E7F9FD;
+    }
+
+    .content1 {
+        width: 40px;
+        height: 600px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .content3 {
+        width: 40px;
+        height: 600px;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .content2 {
+        width: 1280px;
+        height: 640px;
+        border-radius: 50px;
+        @include space-between;
+        position: relative;
+
+
+        .content2-texts {
+            background-color: initial;
+            padding: 50px;
+            @include flex-diraction-column;
+            gap: 100px;
+
+            .content2-text {
+                @include flex-diraction-column;
+
+                .recipes {
+                    @include default-text-style($fontSize: 14px, $fontWeight: 600, $color: $primaryTextColor);
+                    padding: 15px 20px;
+                    @include align-items-center;
+                    gap: 13px;
+                    background-color: #fff;
+                    border-radius: 30px;
+                    margin: 0;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+
+                h1 {
+                    @include default-text-style($fontSize: 64px, $fontWeight: 600, $color: $primaryTextColor);
+                    line-height: 77px;
+                }
+
+                .summary {
+                    @include default-text-style($fontSize: 16px, $fontWeight: 400, $color: $secondaryTextColor);
+                    line-height: 28px;
+                }
+
+                .categories {
+                    @include align-items-center;
+                    gap: 16px;
+
+                    p {
+                        @include align-items-center;
+                        background: #0000000D;
+                        @include default-text-style($fontSize: 14px, $fontWeight: 500, $color: $secondaryTextColor);
+                        line-height: 17px;
+                        padding: 8px 16px;
+                        border-radius: 30px;
+                        gap: 10px;
+
+                        i {
+                            color: $primaryTextColor;
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+            }
+
+            .main-profile {
+                width: 100%;
+                @include space-between;
+
+                .img-and-name {
+                    height: 60px;
+                    @include space-between;
+                    gap: 16px;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .main-profile-name {
+                        @include flex-diraction-column;
+                        align-items: start;
+                        gap: 8px;
+
+                        p {
+                            @include default-text-style($fontSize: 16px, $fontWeight: 700, $color: $primaryTextColor);
+                            line-height: 20px;
+                            margin: 0;
+
+                            &:last-child {
+                                color: $secondaryTextColor !important;
+                            }
+                        }
+                    }
+
+                }
+
+                button {
+                    width: 200px;
+                    height: 60px;
+                    padding: 18px 36px;
+                    background-color: $primaryTextColor;
+                    border-radius: 16px;
+                    @include align-items-center;
+                    gap: 15px;
+
+                    @include default-text-style($fontSize: 14px, $fontWeight: 600, $color: #fff);
+
+                    i {
+                        font-size: 24px;
+                        color: #fff;
+                    }
+                }
+
+            }
+
+        }
+
+        .content2-img {
+            width: 660px;
+            height: 640px;
+            border-radius: 0 50px 50px 0;
+
+            img {
+                border-radius: 0 50px 50px 0;
+                object-fit: cover;
+            }
+        }
+
+        .nice-hand {
+            width: 150px;
+            height: 150px;
+            top: 50px;
+            left: 570px;
+            position: absolute;
+            border-radius: 50%;
+
+            img {
+                object-fit: cover;
+            }
+
+        }
+    }
+
+}

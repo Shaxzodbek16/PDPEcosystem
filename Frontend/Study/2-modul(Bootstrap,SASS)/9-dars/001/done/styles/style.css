@@ -1,0 +1,1007 @@
+header {
+  padding: 40px 80px;
+  width: 100%;
+  height: 110px;
+}
+header nav {
+  width: 100%;
+}
+header nav .nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .nav-container .logo {
+  width: 110px;
+  height: 30px;
+}
+header nav .nav-container .links {
+  display: flex;
+  align-items: center;
+}
+header nav .nav-container .links a {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: 0.4s background-color, 1s color;
+}
+header nav .nav-container .links a:hover {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #E7FAFE;
+}
+header nav .nav-container .social-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header nav .nav-container .social-links i {
+  font-size: 22px;
+  color: #000000;
+  cursor: pointer;
+}
+header nav .nav-container .social-links i:first-child:hover {
+  color: #4267B2;
+  text-shadow: 0px 0px 15px rgb(0, 101, 148);
+}
+header nav .nav-container .social-links i:nth-child(2):hover {
+  color: #1DA1F2;
+  text-shadow: 0px 0px 15px #3381b1;
+}
+header nav .nav-container .social-links i:last-child:hover {
+  border-radius: 5px;
+  background: #d6249f;
+  color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 0px 10px #942872;
+}
+
+.header-content {
+  width: 100%;
+  height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.header-content div {
+  background-color: #E7F9FD;
+}
+.header-content .content1 {
+  width: 40px;
+  height: 600px;
+  border-radius: 0 10px 10px 0;
+}
+.header-content .content3 {
+  width: 40px;
+  height: 600px;
+  border-radius: 10px 0 0 10px;
+}
+.header-content .content2 {
+  width: 1280px;
+  height: 640px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.header-content .content2 .content2-texts {
+  background-color: initial;
+  padding: 50px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 100px;
+}
+.header-content .content2 .content2-texts .content2-text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.header-content .content2 .content2-texts .content2-text .recipes {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 0;
+}
+.header-content .content2 .content2-texts .content2-text .recipes img {
+  width: 24px;
+  height: 24px;
+}
+.header-content .content2 .content2-texts .content2-text h1 {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 77px;
+}
+.header-content .content2 .content2-texts .content2-text .summary {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 28px;
+}
+.header-content .content2 .content2-texts .content2-text .categories {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-content .content2 .content2-texts .content2-text .categories p {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.0509803922);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 17px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  gap: 10px;
+}
+.header-content .content2 .content2-texts .content2-text .categories p i {
+  color: #000000;
+  font-size: 24px;
+}
+.header-content .content2 .content2-texts .main-profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-content .content2 .content2-texts .main-profile .img-and-name {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.header-content .content2 .content2-texts .main-profile .img-and-name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-content .content2 .content2-texts .main-profile .img-and-name .main-profile-name {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+}
+.header-content .content2 .content2-texts .main-profile .img-and-name .main-profile-name p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 20px;
+  margin: 0;
+}
+.header-content .content2 .content2-texts .main-profile .img-and-name .main-profile-name p:last-child {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.header-content .content2 .content2-texts .main-profile button {
+  width: 200px;
+  height: 60px;
+  padding: 18px 36px;
+  background-color: #000000;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #fff;
+}
+.header-content .content2 .content2-texts .main-profile button i {
+  font-size: 24px;
+  color: #fff;
+}
+.header-content .content2 .content2-img {
+  width: 660px;
+  height: 640px;
+  border-radius: 0 50px 50px 0;
+}
+.header-content .content2 .content2-img img {
+  border-radius: 0 50px 50px 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header-content .content2 .nice-hand {
+  width: 150px;
+  height: 150px;
+  top: 50px;
+  left: 570px;
+  position: absolute;
+  border-radius: 50%;
+}
+.header-content .content2 .nice-hand img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.custom-main-first {
+  margin-top: 160px;
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0 80px;
+}
+.custom-main-first .custom-main-first-up {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom-main-first .custom-main-first-up h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+}
+.custom-main-first .custom-main-first-up a {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  padding: 21px 27px;
+  border-radius: 16px;
+  background-color: #E7FAFE;
+  text-decoration: none;
+}
+
+.custom-main-first-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 180px;
+  height: 200px;
+  gap: 50px;
+  border-radius: 30px;
+}
+.custom-main-first-card img {
+  width: 100px;
+  height: 100px;
+}
+.custom-main-first-card h1 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+}
+
+.custom-main-first-cards-container div:nth-child(1) {
+  background: linear-gradient(180deg, rgba(112, 130, 70, 0) 0%, rgba(112, 130, 70, 0.1) 100%);
+}
+.custom-main-first-cards-container div:nth-child(1) img {
+  filter: drop-shadow(20px 20px 4px #c8c8c8);
+}
+.custom-main-first-cards-container div:nth-child(2) {
+  background: linear-gradient(180deg, rgba(108, 198, 63, 0) 0%, rgba(108, 198, 63, 0.1) 100%);
+}
+.custom-main-first-cards-container div:nth-child(2) img {
+  filter: drop-shadow(20px 20px 4px rgba(108, 198, 63, 0.1));
+}
+.custom-main-first-cards-container div:nth-child(3) {
+  background: linear-gradient(180deg, rgba(204, 38, 27, 0) 0%, rgba(204, 38, 27, 0.1) 100%);
+}
+.custom-main-first-cards-container div:nth-child(3) img {
+  filter: drop-shadow(20px 20px 4px rgba(204, 38, 27, 0.1));
+}
+.custom-main-first-cards-container div:nth-child(4) {
+  background: linear-gradient(180deg, rgba(240, 158, 0, 0) 0%, rgba(240, 158, 0, 0.1) 100%);
+}
+.custom-main-first-cards-container div:nth-child(4) img {
+  filter: drop-shadow(20px 20px 4px rgba(240, 158, 0, 0.1));
+}
+.custom-main-first-cards-container div:nth-child(5) {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+.custom-main-first-cards-container div:nth-child(5) img {
+  filter: drop-shadow(20px 20px 4px rgba(0, 0, 0, 0.05));
+}
+.custom-main-first-cards-container div:nth-child(6) {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+}
+.custom-main-first-cards-container div:nth-child(6) img {
+  filter: drop-shadow(20px 20px 4px rgba(0, 0, 0, 0.05));
+}
+
+.simple-and-tasty-recipes {
+  width: 100%;
+  padding: 0 80px;
+  margin-top: 180px;
+  margin-bottom: 140px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 96px;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-text h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 58px;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-text p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 28px;
+  width: 700px;
+  text-align: center;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(400px, 1fr));
+  grid-auto-rows: 435px;
+  gap: 40px;
+  width: 100%;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+  background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+  border-radius: 30px;
+  position: relative;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card h1 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 32px;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 24px;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div p i {
+  font-size: 16px;
+  color: #000000;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card span {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  display: block;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.simple-and-tasty-recipes .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card span i {
+  font-size: 24px;
+  color: #FF6363;
+}
+
+.simple-and-tasty-recipes-grid-container-card-custom {
+  position: relative;
+}
+.simple-and-tasty-recipes-grid-container-card-custom .custom-bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.simple-and-tasty-recipes-grid-container-card-custom div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  gap: 30px;
+}
+.simple-and-tasty-recipes-grid-container-card-custom div h1 {
+  width: 180px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+}
+.simple-and-tasty-recipes-grid-container-card-custom div p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 16px;
+}
+
+.shef {
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 44px;
+}
+.shef .shef-texts {
+  width: 526px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-top: 168px;
+  gap: 24px;
+}
+.shef .shef-texts h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 58px;
+}
+.shef .shef-texts p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 28px;
+}
+.shef .shef-texts a {
+  margin-top: 48px;
+  padding: 21px 53px;
+  background-color: #000000;
+  border-radius: 16px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: white;
+  line-height: 16px;
+  text-decoration: none;
+}
+.shef .shef-img {
+  width: 651px;
+  height: 600px;
+  background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+  border-radius: 30px;
+  position: relative;
+  z-index: 10;
+}
+.shef .shef-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shef .shef-img img:nth-child(1) {
+  position: absolute;
+  width: 660px;
+  height: 600px;
+  bottom: 0;
+  left: -50px;
+}
+.shef .shef-img img:nth-child(2) {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 423px;
+  left: -25px;
+}
+.shef .shef-img img:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 70px;
+  left: 102px;
+}
+.shef .shef-img img:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 168px;
+  right: 14px;
+}
+.shef .shef-img img:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 97px;
+  right: 130px;
+}
+
+.instagram-posts {
+  margin-top: 200px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.instagram-posts h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+}
+.instagram-posts p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 28px;
+}
+.instagram-posts a {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: white;
+  padding: 21px 32px;
+  border-radius: 16px;
+  text-decoration: none;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 17px;
+  margin-bottom: 80px;
+}
+.instagram-posts a i {
+  font-size: 24px;
+}
+.instagram-posts .posts-container {
+  padding: 80px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(290px, 1fr));
+  grid-auto-rows: 445px;
+  gap: 40px;
+}
+.instagram-posts .posts-container .posts-container-card {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 8px;
+  background: #fff;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-up {
+  padding: 0 11px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-up .posts-container-card-up-profile {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-up .posts-container-card-up-profile div {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-up .posts-container-card-up-profile div p {
+  font-family: Inter;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 10px;
+  margin: 0;
+  padding: 0;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-middle {
+  width: 294px;
+  height: 290px;
+  position: relative;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-middle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-middle span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(18, 18, 18, 0.6980392157);
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #fff;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-bottom {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-bottom .like-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-bottom .like-section div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-bottom .like-section i {
+  font-size: 24px;
+  color: #000;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-bottom .like-count-section p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-bottom p {
+  margin-top: -10px;
+  padding: 0 10px;
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 13px;
+}
+.instagram-posts .posts-container .posts-container-card .posts-container-card-bottom data {
+  padding: 0 10px 10px 10px;
+  font-family: Inter;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 10.15px;
+  margin-top: -10px;
+}
+
+.simple-and-tasty-recipes-2 {
+  width: 100%;
+  padding: 0 80px;
+  margin-top: 180px;
+  margin-bottom: 140px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 96px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-text h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 58px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-text p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 28px;
+  width: 700px;
+  text-align: left;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(290px, 1fr));
+  grid-auto-rows: 435px;
+  gap: 40px;
+  width: 100%;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+  border-radius: 30px;
+  position: relative;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card h1 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 32px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 24px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div p i {
+  font-size: 16px;
+  color: #000000;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card span {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  display: block;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card span i {
+  font-size: 24px;
+  color: #FF6363;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% - 80px - 80px);
+  margin: 80px;
+  height: 442px;
+  background-color: #E7FAFE;
+  border-radius: 60px;
+  gap: 24px;
+  position: relative;
+}
+.form h1 {
+  margin-top: 80px;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 58px;
+}
+.form p {
+  width: 620px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 28px;
+}
+.form img {
+  position: absolute;
+}
+.form .vegetables {
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 60px;
+}
+.form .salad {
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 60px;
+}
+.form .rucola {
+  bottom: 80px;
+  right: 245px;
+}
+.form .get-email {
+  width: 480px;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 20px;
+  border-radius: 24px;
+}
+.form .get-email input {
+  border: none;
+  font-size: 24px;
+}
+.form .get-email button {
+  width: 160px;
+  height: 60px;
+  background-color: #000000;
+  border-radius: 16px;
+  color: white;
+  border: none;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.social-links i {
+  font-size: 22px;
+  color: #000000;
+  cursor: pointer;
+}
+.social-links i:first-child:hover {
+  color: #4267B2;
+  text-shadow: 0px 0px 15px rgb(0, 101, 148);
+}
+.social-links i:nth-child(2):hover {
+  color: #1DA1F2;
+  text-shadow: 0px 0px 15px #3381b1;
+}
+.social-links i:last-child:hover {
+  border-radius: 5px;
+  background: #d6249f;
+  color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 0px 10px #942872;
+}
+
+.deep {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  margin-left: 40%;
+  justify-content: space-between;
+  margin-right: 80px;
+}
+.deep h1 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 22px;
+}
+.deep h1 span {
+  color: #fd5949;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
