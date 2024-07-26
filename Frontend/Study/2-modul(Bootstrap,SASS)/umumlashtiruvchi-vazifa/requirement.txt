@@ -1,0 +1,14 @@
+Proekt uchun qisqacha qo'llanma (foydalaniladigan texnalogiyalar) : 
+Umumiy dizayndagi elementlarni yonma-yon joylashtirish uchun structura qurishda 
+display : flex; dan foydalanib bajariladi. Unga qo'shimcha ravishda esa, flex dagi 
+justify-content: align-items kodlardan foydalaniladi. 
+Structuraga qarab grid texnalogiyasini ham qollashingiz mumkin. 
+Aylana shakldagi rasmlarni yaratish uchun border-radius: 50%; qilib bajariladi. 
+Aylana rasmlar burchagidagi aylana shakldagi narxlarni position bilan joylashtiriladi. 
+Navbardagi Linklarga cursor borganda colori 191919 bo'lgan linklarni 
+rangi f54748 ga o'zgarishi kerak. Responsivlik uchun bootstrap ning 
+container row col classlaridan foydalanilsin. Unga qo'shimcha ravishda esa, css da 
+media query yozilsin. Responsivlikda pasdan scrool paydo bo'lishi mumkin emas bu 
+loyiha to'g'ri bajarilmaganligini anglatadi Qo'shimch: barcha rasmlar, 
+ranglar va o'lchamlarni Figmadan olinadi ! Project : 
+https://www.figma.com/file/20Gf6nfdqRrjhXcOPKQdst/Front-end-2-modul-uchun?type=design&node-id=0%3A1&mode=design&t=j9dGjnssIyGpJtWO-1
