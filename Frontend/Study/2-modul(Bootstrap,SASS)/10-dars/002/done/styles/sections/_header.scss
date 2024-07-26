@@ -1,0 +1,72 @@
+header {
+    padding: 40px 80px;
+    width: 100%;
+    height: 110px;
+
+    nav {
+        width: 100%;
+
+        .nav-container {
+            width: 100%;
+            @include space-between;
+
+            .logo {
+                width: 110px;
+                height: 30px;
+            }
+
+            .links {
+                @include align-items-center;
+
+                a {
+                    @include default-text-style($fontSize: 16px, $fontWeight: 500, $color: $primaryTextColor);
+                    text-decoration: none;
+                    padding: 1rem 2rem;
+                    border-radius: 10px;
+                    transition: 0.4s background-color, 1s color;
+
+                    &:hover {
+                        @include default-text-style($fontSize: 16px, $fontWeight: 500, $color: $secondaryTextColor);
+                        background-color: $lightColor;
+                    }
+                }
+            }
+
+            .social-links {
+                @include align-items-center;
+                gap: 40px;
+
+                i {
+                    font-size: 22px;
+                    color: $primaryTextColor;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    &:first-child {
+                        &:hover {
+                            color: #4267B2;
+                            text-shadow: 0px 0px 15px rgb(0, 101, 148);
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        &:hover {
+                            color: #1DA1F2;
+                            text-shadow: 0px 0px 15px #3381b1;
+                        }
+                    }
+
+                    &:last-child {
+                        &:hover {
+                            border-radius: 5px;
+                            background: #d6249f;
+                            color: #fff;
+                            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                            box-shadow: 0px 0px 10px #942872;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

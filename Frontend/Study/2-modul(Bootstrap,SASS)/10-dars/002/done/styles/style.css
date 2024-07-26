@@ -1,0 +1,443 @@
+header {
+  padding: 40px 80px;
+  width: 100%;
+  height: 110px;
+}
+header nav {
+  width: 100%;
+}
+header nav .nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .nav-container .logo {
+  width: 110px;
+  height: 30px;
+}
+header nav .nav-container .links {
+  display: flex;
+  align-items: center;
+}
+header nav .nav-container .links a {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: 0.4s background-color, 1s color;
+}
+header nav .nav-container .links a:hover {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #E7FAFE;
+}
+header nav .nav-container .social-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header nav .nav-container .social-links i {
+  font-size: 22px;
+  color: #000000;
+  cursor: pointer;
+  transition: 0.5s;
+}
+header nav .nav-container .social-links i:first-child:hover {
+  color: #4267B2;
+  text-shadow: 0px 0px 15px rgb(0, 101, 148);
+}
+header nav .nav-container .social-links i:nth-child(2):hover {
+  color: #1DA1F2;
+  text-shadow: 0px 0px 15px #3381b1;
+}
+header nav .nav-container .social-links i:last-child:hover {
+  border-radius: 5px;
+  background: #d6249f;
+  color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 0px 10px #942872;
+}
+
+.simple-and-tasty-recipes-2 {
+  width: 100%;
+  padding: 0 80px;
+  margin-top: 180px;
+  margin-bottom: 140px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 96px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-text h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 58px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-text p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 28px;
+  width: 700px;
+  text-align: left;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(290px, 1fr));
+  grid-auto-rows: 435px;
+  gap: 40px;
+  width: 100%;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+  border-radius: 30px;
+  position: relative;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card h1 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 32px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 24px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div p i {
+  font-size: 16px;
+  color: #000000;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card span {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  display: block;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card span i {
+  font-size: 24px;
+  color: #FF6363;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% - 80px - 80px);
+  margin: 80px;
+  height: 442px;
+  background-color: #E7FAFE;
+  border-radius: 60px;
+  gap: 24px;
+  position: relative;
+}
+.form h1 {
+  margin-top: 80px;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 58px;
+}
+.form p {
+  width: 620px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 28px;
+}
+.form img {
+  position: absolute;
+}
+.form .vegetables {
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 60px;
+}
+.form .salad {
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 60px;
+}
+.form .rucola {
+  bottom: 80px;
+  right: 245px;
+}
+.form .get-email {
+  width: 480px;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 20px;
+  border-radius: 24px;
+}
+.form .get-email input {
+  border: none;
+  font-size: 24px;
+}
+.form .get-email button {
+  width: 160px;
+  height: 60px;
+  background-color: #000000;
+  border-radius: 16px;
+  color: white;
+  border: none;
+}
+
+.top-content {
+  width: 100%;
+  padding: 80px 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+.top-content h1 {
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 77px;
+}
+.top-content .text div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+}
+.top-content .text div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.top-content .text div p {
+  padding: 0 24px;
+  margin: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 19px;
+}
+.top-content .text div span {
+  padding: 0 24px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  border-left: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.top-content .d-width {
+  width: 1060px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 28px;
+  text-align: center;
+}
+
+.fire-cook {
+  padding: 0 80px;
+}
+
+.main {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  align-items: start;
+  margin-bottom: 100px;
+}
+.main .main-right {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+.main .main-right .coll {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+}
+.main .main-left {
+  width: 920px;
+  gap: 24px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.main .main-left .text {
+  padding: 0 0 111px 111px;
+}
+.main .main-left .text h1 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 29px;
+}
+.main .main-left .text p {
+  margin-top: 24px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 28px;
+}
+.main .main-left .custom-text {
+  padding: 48px 41px 48px 41px;
+  margin-left: 111px;
+  margin-bottom: 111px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.main .main-left .custom-text p {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 64px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.social-links i {
+  font-size: 22px;
+  color: #000000;
+  cursor: pointer;
+}
+.social-links i:first-child:hover {
+  color: #4267B2;
+  text-shadow: 0px 0px 15px rgb(0, 101, 148);
+}
+.social-links i:nth-child(2):hover {
+  color: #1DA1F2;
+  text-shadow: 0px 0px 15px #3381b1;
+}
+.social-links i:last-child:hover {
+  border-radius: 5px;
+  background: #d6249f;
+  color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 0px 10px #942872;
+}
+
+.deep {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  margin-left: 40%;
+  justify-content: space-between;
+  margin-right: 80px;
+}
+.deep h1 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 22px;
+}
+.deep h1 span {
+  color: #fd5949;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */

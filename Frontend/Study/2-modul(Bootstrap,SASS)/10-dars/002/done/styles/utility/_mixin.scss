@@ -1,0 +1,32 @@
+@mixin space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-diraction-column {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+@mixin flex-diraction-column-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin default-text-style($fontSize, $fontWeight, $color) {
+    font-family: Inter;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: 19.36px;
+    text-align: left;
+    color: $color;
+
+}

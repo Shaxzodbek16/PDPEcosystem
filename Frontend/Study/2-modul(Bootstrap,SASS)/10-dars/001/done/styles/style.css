@@ -1,0 +1,772 @@
+header {
+  padding: 40px 80px;
+  width: 100%;
+  height: 110px;
+}
+header nav {
+  width: 100%;
+}
+header nav .nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .nav-container .logo {
+  width: 110px;
+  height: 30px;
+}
+header nav .nav-container .links {
+  display: flex;
+  align-items: center;
+}
+header nav .nav-container .links a {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: 0.4s background-color, 1s color;
+}
+header nav .nav-container .links a:hover {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #E7FAFE;
+}
+header nav .nav-container .social-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header nav .nav-container .social-links i {
+  font-size: 22px;
+  color: #000000;
+  cursor: pointer;
+  transition: 0.5s;
+}
+header nav .nav-container .social-links i:first-child:hover {
+  color: #4267B2;
+  text-shadow: 0px 0px 15px rgb(0, 101, 148);
+}
+header nav .nav-container .social-links i:nth-child(2):hover {
+  color: #1DA1F2;
+  text-shadow: 0px 0px 15px #3381b1;
+}
+header nav .nav-container .social-links i:last-child:hover {
+  border-radius: 5px;
+  background: #d6249f;
+  color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 0px 10px #942872;
+}
+
+.simple-and-tasty-recipes-2 {
+  width: 100%;
+  padding: 0 80px;
+  margin-top: 180px;
+  margin-bottom: 140px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 96px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-text h1 {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 58px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-text p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 28px;
+  width: 700px;
+  text-align: left;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(290px, 1fr));
+  grid-auto-rows: 435px;
+  gap: 40px;
+  width: 100%;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 16px;
+  border-radius: 30px;
+  position: relative;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card h1 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 32px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 24px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card div p i {
+  font-size: 16px;
+  color: #000000;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card span {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  display: block;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.simple-and-tasty-recipes-2 .simple-and-tasty-recipes-grid-container .simple-and-tasty-recipes-grid-container-card span i {
+  font-size: 24px;
+  color: #FF6363;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% - 80px - 80px);
+  margin: 80px;
+  height: 442px;
+  background-color: #E7FAFE;
+  border-radius: 60px;
+  gap: 24px;
+  position: relative;
+}
+.form h1 {
+  margin-top: 80px;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 58px;
+}
+.form p {
+  width: 620px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 28px;
+}
+.form img {
+  position: absolute;
+}
+.form .vegetables {
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 60px;
+}
+.form .salad {
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 60px;
+}
+.form .rucola {
+  bottom: 80px;
+  right: 245px;
+}
+.form .get-email {
+  width: 480px;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 0 20px;
+  border-radius: 24px;
+}
+.form .get-email input {
+  border: none;
+  font-size: 24px;
+}
+.form .get-email button {
+  width: 160px;
+  height: 60px;
+  background-color: #000000;
+  border-radius: 16px;
+  color: white;
+  border: none;
+}
+
+.const .img-and-name {
+  padding: 0 !important;
+}
+
+.main-profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-profile .img-and-name {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.main-profile .img-and-name img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-profile .img-and-name .main-profile-name {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+}
+.main-profile .img-and-name .main-profile-name p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 20px;
+  margin: 0;
+}
+.main-profile .img-and-name .main-profile-name p:last-child {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.main-profile button {
+  width: 200px;
+  height: 60px;
+  padding: 18px 36px;
+  background-color: #000000;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #fff;
+}
+.main-profile button i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.first-container {
+  width: 100%;
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.first-container .first-container-text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 48px;
+}
+.first-container .first-container-text .profiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.first-container .first-container-text .profiles .main-profile {
+  width: 180px;
+  height: 50px;
+}
+.first-container .first-container-text .profiles .main-profile .img-and-name {
+  padding: 0 0 0 20px;
+}
+.first-container .first-container-text .profiles .main-profile .img-and-name img {
+  width: 50px;
+  height: 50px;
+}
+.first-container .first-container-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.first-container .first-container-icons p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.first-container .first-container-icons p i {
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #E7FAFE;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.small-one {
+  border-left: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.small-one img {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.video-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 80px;
+}
+.video-content img {
+  width: 840px;
+  height: 600px;
+  border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-content .notes-container {
+  width: 400px;
+  height: 600px;
+  border-radius: 30px;
+  background-color: #E7FAFE;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+}
+.video-content .notes-container .notes {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
+}
+.video-content .notes-container .notes h1 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 29px;
+}
+.video-content .notes-container .notes div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  gap: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.video-content .notes-container .notes div p {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 21px;
+}
+.video-content .notes-container .notes div p:last-child {
+  color: #000000;
+}
+.video-content .notes-container p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 28px;
+}
+
+.justtext {
+  padding: 80px;
+}
+.justtext p {
+  font-family: Inter;
+  font-size: 16;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 28px;
+  text-align: left;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  align-items: start;
+}
+.main .main-right {
+  width: 400px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 80px;
+}
+.main .main-right .main-retcipes {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 24px;
+}
+.main .main-right .main-retcipes h1 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 38px;
+  gap: 32px;
+}
+.main .main-right .main-retcipes div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.main .main-right .main-retcipes div h1 {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 24px;
+}
+.main .main-right .main-retcipes div h1 p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 28px;
+  margin: 0;
+}
+.main .main-right .main-retcipes div h1 p:last-child {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 16px;
+}
+.main .main-right .card-custom {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.main .main-right .card-custom img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .main-right .card-custom div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.main .main-right .card-custom div h1 {
+  width: 180px;
+  position: absolute;
+  top: 40px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+}
+.main .main-right .card-custom div img {
+  position: absolute;
+  top: 110px;
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .main-right .card-custom div p {
+  position: absolute;
+  top: 350px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 24px;
+  text-align: center;
+}
+.main .main-left {
+  width: 100%;
+  gap: 32px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.main .main-left .main-left-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.main .main-left .main-left-card img {
+  width: 290px;
+  height: 200px;
+  border-radius: 20px;
+}
+.main .main-left .main-left-card .texts {
+  padding: 13px 56px 13px 26px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
+}
+.main .main-left .main-left-card .texts h1 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 29px;
+}
+.main .main-left .main-left-card .texts p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 28px;
+}
+.main .main-left .main-left-card .texts .text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+}
+.main .main-left .main-left-card .texts .text img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.main .main-left .main-left-card .texts .text p {
+  padding: 0 24px;
+  margin: 0;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 19px;
+}
+.main .main-left .main-left-card .texts .text span {
+  padding: 0 24px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  border-left: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+
+.that-is {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.that-is i {
+  background-color: #000000;
+  border-radius: 100%;
+}
+
+.no-border {
+  border: none !important;
+  padding: 24px;
+}
+
+.directions {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.directions .directions-text {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+}
+.directions .directions-text h1 {
+  padding-top: 48px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 30px;
+}
+.directions .directions-text h1 i {
+  color: #DBE2E5;
+}
+.directions .directions-text p {
+  padding: 24px 48px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 26px;
+}
+.directions .directions-text img {
+  padding: 24px 48px;
+}
+
+.pagination {
+  width: 100%;
+  margin: 20px auto;
+}
+.pagination nav {
+  margin: 0 auto;
+}
+.pagination nav ul li a {
+  color: #000;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.social-links i {
+  font-size: 22px;
+  color: #000000;
+  cursor: pointer;
+}
+.social-links i:first-child:hover {
+  color: #4267B2;
+  text-shadow: 0px 0px 15px rgb(0, 101, 148);
+}
+.social-links i:nth-child(2):hover {
+  color: #1DA1F2;
+  text-shadow: 0px 0px 15px #3381b1;
+}
+.social-links i:last-child:hover {
+  border-radius: 5px;
+  background: #d6249f;
+  color: #fff;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0px 0px 10px #942872;
+}
+
+.deep {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  margin-left: 40%;
+  justify-content: space-between;
+  margin-right: 80px;
+}
+.deep h1 {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: left;
+  color: #000000;
+  line-height: 22px;
+}
+.deep h1 span {
+  color: #fd5949;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
