@@ -1,0 +1,90 @@
+section {
+    margin-bottom: 160px;
+    @include flex-diraction-column-center;
+    width: 100%;
+    height: calc(100vh - 111px);
+    padding: 84px 80px !important;
+    gap: 48px;
+
+    h1 {
+        width: 100%;
+        @include default-text-style($fontSize: 64px, $fontWeight: 600, $color: $primaryTextColor);
+        line-height: 77px;
+        text-align: center;
+    }
+
+    .section-submit {
+        @include align-items-center;
+        justify-content: center;
+        gap: 40px;
+
+        .img {
+            border-radius: 30px;
+            @include align-items-center;
+            justify-content: center;
+            width: 400px;
+            background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+
+            img {
+                width: 350px;
+                height: 470px;
+                object-fit: cover;
+            }
+        }
+
+        .form-container {
+            width: 840px;
+            @include flex-diraction-column;
+            gap: 24px;
+
+            .formm {
+                width: 100%;
+                @include align-items-center;
+                justify-content: center;
+                gap: 40px;
+
+                div {
+                    width: 100%;
+                    @include flex-diraction-column;
+                    justify-content: start;
+
+                    label {
+                        @include default-text-style(12px, 500, #00000099);
+                        line-height: 20px;
+                    }
+
+                    input,
+                    select,
+                    textarea {
+                        padding: 18px 20px;
+                        width: 400px;
+                        font-size: 14px;
+                        color: $primaryTextColor;
+
+                        &::placeholder {
+                            color: #00000099;
+                        }
+
+                        border-radius:16px;
+                        border: 1px solid #0000001A
+                    }
+
+                    textarea {
+                        width: 100% !important;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    button {
+        padding: 20px 63px;
+        background-color: $primaryTextColor;
+        border-radius: 16px;
+        border: none;
+        color: #fff;
+    }
+}
