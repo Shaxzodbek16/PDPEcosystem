@@ -5,5 +5,5 @@ void main(){
   num R = 10;
   const PI = 3.14;
   num L = 2*PI*R;
-  print(num);
+  print(L);
 }
