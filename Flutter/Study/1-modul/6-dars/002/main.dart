@@ -1,0 +1,1 @@
+// Berilgan sonni faktorialini hisoblovchi dastur tuzing.
