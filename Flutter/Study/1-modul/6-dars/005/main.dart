@@ -8,3 +8,14 @@
 // 2*2*2*2*2 = 32 bo'ladi. Bunda for 5 marta aylanishi kerak va har gal biz
 // 2ga ko'paytirib ketishimiz kerak. Demak berilgan sonni n marta o'ziga
 // ko'paytirsak o'sha sonni n-chi darajasi kelib chiqadi.
+
+
+void main(){
+  int number = 3, power = 4;
+  int result = 1;
+  while (power != 0){
+    result *= number;
+    power -=1;
+  }
+  print(result);
+}

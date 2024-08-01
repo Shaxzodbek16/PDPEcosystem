@@ -11,3 +11,17 @@
 // Yuqoridagi 1 - 9 gacha bo’lgan tasklarni ham for, ham while, ham do-while
 // orqali dasturini tuzing. Quyidagi tasklarni misolga mos loopni tanlab
 // hisoblang!
+
+
+void main(){
+  int number=121, reversed_number=0;
+  int mod = 0, keep_number=number;
+  while (number != 0) {
+    mod = number % 10;
+    reversed_number = reversed_number * 10 + mod;
+    number -= mod;
+    number ~/= 10;
+  }
+  if (reversed_number==keep_number) print(true);
+  else print(false);
+}

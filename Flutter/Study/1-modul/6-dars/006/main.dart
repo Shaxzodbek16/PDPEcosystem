@@ -7,3 +7,13 @@
 // Berilgan a=25 Natija: false
 // Maslahat: Misolda berilgan sonning bo'linuvchilarini hisoblang.
 // Agar bo'luvchilar soni 2ga teng bo'lsa demak u tubson.
+
+
+void main(){
+  int number = 38, count = 0;
+  for (int i = 3; i<= number ~/2; i++){
+    if (number % i ==0) count++;
+  }
+  if (count != 0) print(false);
+  else print(true);
+}

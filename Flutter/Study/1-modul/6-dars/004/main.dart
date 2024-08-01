@@ -6,3 +6,12 @@
 // Maslahat: Sonni 5 ga bo'linishini bilish uchun uni 5 ga qoldiqli bo'lganda
 // qoldig'i 0 ga teng bo'lishi kerak. Yig'indini hisoblash uchun esa bitta sum
 // degan o'zgaruvchi ochib unga yig'indilarni qo'shib keting.
+
+void main(){
+  int sum = 0;
+  int number = 35;
+  for (int i=0; i <=number; i++){
+    if (i%5==0) sum += i;
+    }
+  print(sum);
+  }
