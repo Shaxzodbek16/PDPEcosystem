@@ -1,0 +1,18 @@
+ArrayList ning Insert, InsertAt, IndexOf,  RemoveAt funksiyalari uchun 
+Time Complexity larini aniqlang.
+
+Insert:
+    Time Complexity O(n)
+    Space Complexity O(n)
+
+InsertAt:
+    Time Complexity O(n)
+    Space Complexity O(1)
+
+IndexOf:
+    Time Complexity O(n)
+    Space Complexity O(1)
+
+RemoveAt:
+    Time Complexity O(n)
+    Space Complexity O()
