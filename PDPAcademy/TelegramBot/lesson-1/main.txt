@@ -1,0 +1,4 @@
+Introduction TelegramBot
+Installing PyCharm
+PyCharm Setting Up
+Setting Up venv for Telegram bot
