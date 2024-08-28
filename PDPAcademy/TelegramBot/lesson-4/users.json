@@ -1,0 +1,20 @@
+[
+   {
+      "full name": "Shaxzodbek Muxxtorov",
+      "age": "19",
+      "phone number": "998915260112",
+      "location": {
+         "long": -122.009199,
+         "lat": 37.334601
+      }
+   },
+   {
+      "full name": "Shaxzodbek 2",
+      "age": "19",
+      "phone number": "998915260112",
+      "location": {
+         "long": -122.009199,
+         "lat": 37.334601
+      }
+   }
+]
