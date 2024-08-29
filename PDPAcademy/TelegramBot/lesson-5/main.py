@@ -31,12 +31,12 @@ async def command_start_handler(message: Message) -> None:
 async def any_message_handler(msg: Message) -> None:
     question_text = msg.reply_to_message
     answer_text = msg.text
-    if 'jasur' in answer_text:
-        await msg.reply('Yana Jasurmi??')
+    if answer_text:
+        answer_text = msg.text.lower()
     with open('messages.json', 'r') as f:
         messages = json.load(f)
     if question_text:
-        question_text = question_text.text
+        question_text = question_text.text.lower()
         if not question_text in messages.keys():
             messages[question_text.lower()] = answer_text.lower()
             with open('messages.json', 'w') as f:
