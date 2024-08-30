@@ -9,7 +9,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.types import Message
-
+from aiogram.client.session.aiohttp import AiohttpSession
 import environ
 
 environ.Env.read_env('../.env')
@@ -46,7 +46,9 @@ async def any_message_handler(msg: Message) -> None:
 
 
 async def main() -> None:
-    bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    p = 'http://proxy.server:3128'
+    session = AiohttpSession(proxy=p)
+    bot = Bot(token=TOKEN, session=session ,default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
     await dp.start_polling(bot)
 
