@@ -1,0 +1,3 @@
+1, 2 va 3 - modulda olingan bilimlaringizdan foydalangan holatda o’zingiz
+Flutterda qilmoqchi bo’lgan ilovangizni Dart CLI orqali simulyatsiya qiluvchi
+loyiha(project) qiling.
