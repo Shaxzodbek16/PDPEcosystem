@@ -6,7 +6,7 @@
 import csv
 
 dict = {}
-with open(f"hospitals.csv", 'r') as fh:
+with open(f"files/hospitals.csv", 'r') as fh:
     file = csv.reader(fh, delimiter=";")
     for i in file:
         if i[0] == 'Hududlar':
