@@ -17,9 +17,10 @@
 #
 # print(result)
 #
-def raqamlar_yigindisi(son):
+def sum_of_numbers(son):
     if son < 10:
         return son
-    return son % 10 + raqamlar_yigindisi(son // 10)
+    return son % 10 + sum_of_numbers(son // 10)
 
-print(raqamlar_yigindisi(345))
+
+print(sum_of_numbers(345))
