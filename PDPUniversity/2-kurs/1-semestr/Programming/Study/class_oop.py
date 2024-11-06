@@ -1,101 +1,101 @@
-# class Cats:
-#     name = 'Alex'
-#     color = 'black'
-#     age = 2
-#
-#     def set_name(self, name, color, age):
-#         self.name = name
-#         self.color = color
-#         self.age = age
-#
-#
-#     def meow(self):
-#         print('Meow', self.name)
-#
-#     def get_name(self):
-#         return self.name, self.color, self.age
-#
-#
-#
-# ct = Cats()
-# ct.set_name('Alex', 'blue', 2)
-# setattr(ct, 'color', 'red')
-# setattr(ct, 'age', 40)
-# # setattr(ct, 'weight', 40)
-# print(ct.__dict__)
-# print(ct.get_name())
-# print(getattr(ct, 'color')) # go to command + tap the func and read docs
-# print(getattr(ct, 'name'))
-# print(getattr(ct, 'age'))
-# print(getattr(ct, 'weight', False))
-# print(hasattr(ct, 'color'))
-# delattr(ct, 'color')
-# print(ct.__dict__)
-#
-#
-# class Dog:
-#     name: str = None
-#     age: int = None
-#     weight: float = None
-#     breed: str = None
-#
-#     def set_attributes(self, name, age, weight, breed):
-#         self.name = name
-#         self.age = age
-#         self.weight = weight
-#         self.breed = breed
-#
-#     def get_attributes(self):
-#         return self.name, self.age, self.weight, self.breed
-#
-#     def bark(self):
-#         if self.weight:
-#             return 'Woof' + self.breed
-#         return 'Set weight'
-#
-# dog = Dog()
-#
-# dog.set_attributes("Buddy", 5, 20.5, "Golden Retriever")
-#
-# name, age, weight, breed = dog.get_attributes()
-# print(f"Name: {name}, Age: {age}, Weight: {weight}, Breed: {breed}")
-#
-# print("Bark sound:", dog.bark())
-#
-#
-# class Singleton:
-#     _instance = None
-#
-#     def __new__(cls, *args, **kwargs):
-#         if not cls._instance:
-#             cls._instance = super(Singleton, cls).__new__(cls)
-#         return cls._instance
-#
-# obj1 = Singleton()
-# obj2 = Singleton()
-#
-# print(obj1 is obj2)
-#
-#
+class Cats:
+    name = 'Alex'
+    color = 'black'
+    age = 2
 
-# class Point:
-#     def __init__(self, x, y):
-#         self.x = x
-#         self.y = y
-#         print("Start")
-#
-#     def aggregate_function(self, x, y):
-#         return self.x + x, self.y + y
-#
-#
-#     def __del__(self):
-#         del self.x, self.y
-#         print("End")
-#
-# pt = Point(1, 2)
-# print(pt.x, pt.y)
-# print(pt.aggregate_function(1, 2))
-# print(pt.x, pt.y)
+    def set_name(self, name, color, age):
+        self.name = name
+        self.color = color
+        self.age = age
+
+
+    def meow(self):
+        print('Meow', self.name)
+
+    def get_name(self):
+        return self.name, self.color, self.age
+
+
+
+ct = Cats()
+ct.set_name('Alex', 'blue', 2)
+setattr(ct, 'color', 'red')
+setattr(ct, 'age', 40)
+# setattr(ct, 'weight', 40)
+print(ct.__dict__)
+print(ct.get_name())
+print(getattr(ct, 'color')) # go to command + tap the func and read docs
+print(getattr(ct, 'name'))
+print(getattr(ct, 'age'))
+print(getattr(ct, 'weight', False))
+print(hasattr(ct, 'color'))
+delattr(ct, 'color')
+print(ct.__dict__)
+
+
+class Dog:
+    name: str = None
+    age: int = None
+    weight: float = None
+    breed: str = None
+
+    def set_attributes(self, name, age, weight, breed):
+        self.name = name
+        self.age = age
+        self.weight = weight
+        self.breed = breed
+
+    def get_attributes(self):
+        return self.name, self.age, self.weight, self.breed
+
+    def bark(self):
+        if self.weight:
+            return 'Woof' + self.breed
+        return 'Set weight'
+
+dog = Dog()
+
+dog.set_attributes("Buddy", 5, 20.5, "Golden Retriever")
+
+name, age, weight, breed = dog.get_attributes()
+print(f"Name: {name}, Age: {age}, Weight: {weight}, Breed: {breed}")
+
+print("Bark sound:", dog.bark())
+
+
+class Singleton:
+    _instance = None
+
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = super(Singleton, cls).__new__(cls)
+        return cls._instance
+
+obj1 = Singleton()
+obj2 = Singleton()
+
+print(obj1 is obj2)
+
+
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        print("Start")
+
+    def aggregate_function(self, x, y):
+        return self.x + x, self.y + y
+
+
+    def __del__(self):
+        del self.x, self.y
+        print("End")
+
+pt = Point(1, 2)
+print(pt.x, pt.y)
+print(pt.aggregate_function(1, 2))
+print(pt.x, pt.y)
 
 
 class Rectangle:
