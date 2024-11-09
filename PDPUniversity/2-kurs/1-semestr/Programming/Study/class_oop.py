@@ -255,3 +255,25 @@ rectangle.resize(6, 5)
 print(rectangle.area())
 print(rectangle.perimeter())
 print(rectangle.is_square())
+
+
+class Person(object):
+    def __init__(self, name, age):
+        self.__name = name
+        self.__age = age
+
+    @property
+    def name(self):
+        return self.__name
+
+    @name.setter
+    def name(self, name):
+        self.__name = name
+
+    @name.deleter
+    def name(self):
+        del self.__name
+
+
+ps = Person('John', 24)
+print(ps.name)

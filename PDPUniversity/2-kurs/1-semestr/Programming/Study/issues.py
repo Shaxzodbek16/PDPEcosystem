@@ -1,23 +1,23 @@
-# def generate(n: int) -> list[list[int]]:
-#     result: list[list[int]] = [[1]]
-#     if n == 1:
-#         return result
-#     result.append([1, 1])
-#     if n == 2:
-#         return result
-#     for i in range(2, n):
-#         temp = []
-#         l, h = 1, len(result[i-1]) - 1
-#         temp.append(1)
-#         while l <= h:
-#             temp.append(result[i-1][l] + result[i-1][l-1])
-#             l+=1
-#         temp.append(1)
-#         result.append(temp)
-#     return result
-#
-#
-# print(generate(10))
+def generate(n: int) -> list[list[int]]:
+    result: list[list[int]] = [[1]]
+    if n == 1:
+        return result
+    result.append([1, 1])
+    if n == 2:
+        return result
+    for i in range(2, n):
+        temp = []
+        l, h = 1, len(result[i-1]) - 1
+        temp.append(1)
+        while l <= h:
+            temp.append(result[i-1][l] + result[i-1][l-1])
+            l+=1
+        temp.append(1)
+        result.append(temp)
+    return result
+
+
+print(generate(10))
 
 def check(word1, word2, curr):
     n = min(len(word1), len(word2), len(curr))
@@ -47,3 +47,21 @@ def longestCommonPrefix(words: list) -> str:
 
 result1 = longestCommonPrefix(["flower", "flow", "flight"])
 print(result1)
+
+
+def longestPalindrome(s: str) -> str:
+    result = ''
+    i, j = 0, len(s) - 1
+    while j+1:
+        if s[j] != s[i]:
+            j -= 1
+            continue
+        result += s[j]
+        j-=1
+        i += 1
+    return result
+
+
+result = longestPalindrome("babad")
+print(result)
+
