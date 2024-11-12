@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   postgres_db:
     image: postgres:latest
@@ -12,6 +10,23 @@ services:
       - '5432:5432'
     volumes:
       - postgres_db:/var/lib/postgresql/data
+
+  mysql_db:
+    image: mysql:latest
+    container_name: MySQLPDPStudy
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysql
+      - MYSQL_USER=mysql
+      - MYSQL_PASSWORD=mysql
+      - MYSQL_DATABASE=mysql
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql_db:/var/lib/mysql
+
 volumes:
   postgres_db:
+    driver: local
+  mysql_db:
     driver: local
