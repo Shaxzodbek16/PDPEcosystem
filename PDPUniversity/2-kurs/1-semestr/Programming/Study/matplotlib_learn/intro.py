@@ -1,13 +1,10 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.random.randint(100, size=(100))
-y = np.random.randint(100, size=(100))
-colors = np.random.randint(100, size=(100))
-sizes = 10 * np.random.randint(100, size=(100))
+x = np.array([-1,0,1, 2, 3, 4, 5, 6, 7])
+y = np.array([1,0,1, 4, 9, 16, 25, 36, 49])
 
-plt.scatter(x, y, c=colors, s=sizes, alpha=0.5, cmap='nipy_spectral')
-
-plt.colorbar()
+plt.plot(x, y)
 
 plt.show()
+
