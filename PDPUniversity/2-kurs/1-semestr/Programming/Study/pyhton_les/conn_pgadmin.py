@@ -26,7 +26,7 @@ def db(query: str, values: tuple = None) -> str | list | None:
 data = db(
     "create table if not exist mock_users (id int, first_name varchar(50), last_name varchar(50), email varchar(50), gender varchar(50), ip_address varchar(50));")
 
-df = pd.read_csv('files/users.csv')
+df = pd.read_csv('../files/users.csv')
 
 for _, row in df.iterrows():
     insert_query = """
