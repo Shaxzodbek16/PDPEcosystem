@@ -1,5 +1,6 @@
 venv
 .idea
+.idea/
 __pycache__
 *.pyc
 .DS_Store
@@ -9,3 +10,5 @@ __pycache__
 venv
 .idea
 .venv
+.vscode
+.vscode/
