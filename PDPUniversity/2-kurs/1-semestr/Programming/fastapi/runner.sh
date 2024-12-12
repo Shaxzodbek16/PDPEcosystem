@@ -2,7 +2,7 @@
 
 echo "The app started successfully !"
 
-uvicorn main2:app --reload
+uvicorn main:app --reload
 
 sleep 1
 

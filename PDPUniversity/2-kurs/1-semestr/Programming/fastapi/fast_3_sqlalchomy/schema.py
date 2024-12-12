@@ -1,13 +1,13 @@
 from pydantic import BaseModel
 from datetime import datetime
+from typing import Optional
 
 
 class Employee(BaseModel):
-    first_name: str
-    last_name: str
-    email: str
-    gender: str
-    date_of_birth: datetime
-    country_of_birth: str
-    position: str
-
+    first_name: Optional[str] = None
+    last_name: Optional[str] = None
+    email: Optional[str] = None
+    gender: Optional[str] = None
+    date_of_birth: Optional[datetime] = None
+    country_of_birth: Optional[str] = None
+    position: Optional[str] = None
