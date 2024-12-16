@@ -1,8 +1,26 @@
-async def async_func() -> int:
-    return 42
+def say_hello(name: str) -> str:
+    return f"Hello, {name}!"
 
-def func() -> int:
-    return 42
 
-print(async_func.__annotations__)
-print(func.__annotations__)
+def add(a: int, b: int) -> int:
+    return a + b
+
+
+def multiply(a: int, b: int) -> int:
+    return a * b
+
+
+def divide(a: int, b: int) -> float:
+    try:
+        return a / b
+    except ZeroDivisionError:
+        raise ValueError("You cannot divide by zero!")
+
+
+def subtract(a: int, b: int) -> int:
+    return a - b
+
+
+def power(a: int, b: int) -> int:
+    return a ** b
+
