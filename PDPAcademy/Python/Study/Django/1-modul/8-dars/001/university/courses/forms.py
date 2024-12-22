@@ -1,5 +1,7 @@
 from django import forms
 from .models import *
+
+
 class CreateSpeciality(forms.Form):
     name = forms.CharField(max_length=60)
     code = forms.CharField(max_length=100)

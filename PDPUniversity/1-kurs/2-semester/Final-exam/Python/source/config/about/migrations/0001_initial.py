@@ -7,52 +7,75 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='AboutWorker',
+            name="AboutWorker",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('firstname', models.CharField(max_length=100)),
-                ('lastname', models.CharField(max_length=100)),
-                ('picture', models.ImageField(upload_to='about/%Y/%m/%d')),
-                ('age', models.IntegerField()),
-                ('place', models.CharField(max_length=100)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("firstname", models.CharField(max_length=100)),
+                ("lastname", models.CharField(max_length=100)),
+                ("picture", models.ImageField(upload_to="about/%Y/%m/%d")),
+                ("age", models.IntegerField()),
+                ("place", models.CharField(max_length=100)),
             ],
             options={
-                'db_table': 'AboutWorker',
-                'ordering': ['firstname'],
+                "db_table": "AboutWorker",
+                "ordering": ["firstname"],
             },
         ),
         migrations.CreateModel(
-            name='Company',
+            name="Company",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=100)),
-                ('description', models.TextField()),
-                ('picture', models.ImageField(upload_to='about/%Y/%m/%d')),
-                ('date', models.DateField(auto_now_add=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=100)),
+                ("description", models.TextField()),
+                ("picture", models.ImageField(upload_to="about/%Y/%m/%d")),
+                ("date", models.DateField(auto_now_add=True)),
             ],
             options={
-                'verbose_name': 'Company',
-                'db_table': 'Company',
-                'ordering': ['date'],
+                "verbose_name": "Company",
+                "db_table": "Company",
+                "ordering": ["date"],
             },
         ),
         migrations.CreateModel(
-            name='Feedback',
+            name="Feedback",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('email', models.EmailField(max_length=254)),
-                ('date', models.DateField(auto_now_add=True)),
-                ('name', models.CharField(max_length=100)),
-                ('message', models.TextField()),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("email", models.EmailField(max_length=254)),
+                ("date", models.DateField(auto_now_add=True)),
+                ("name", models.CharField(max_length=100)),
+                ("message", models.TextField()),
             ],
             options={
-                'db_table': 'Feedback',
-                'ordering': ['date'],
+                "db_table": "Feedback",
+                "ordering": ["date"],
             },
         ),
     ]

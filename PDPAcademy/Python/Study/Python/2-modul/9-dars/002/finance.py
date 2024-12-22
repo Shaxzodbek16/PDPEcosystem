@@ -3,15 +3,17 @@ import sys
 
 
 def main() -> None:
-    conn = sqlite3.connect('finance.db')
+    conn = sqlite3.connect("finance.db")
     c = conn.cursor()
 
-    c.execute('''
+    c.execute(
+        """
         CREATE TABLE IF NOT EXISTS finance (
             id INTEGER PRIMARY KEY,
             balance INTEGER
         )
-    ''')
+    """
+    )
     if len(sys.argv) >= 3:
         print("Usage: python finance.py {earn|spend|balance} amount")
         return

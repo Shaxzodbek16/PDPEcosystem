@@ -6,11 +6,11 @@ from typing import override
 class Figure(ABC):
     @abstractmethod
     def area(self):
-        raise NotImplementedError('The area method is not implemented')
+        raise NotImplementedError("The area method is not implemented")
 
     @abstractmethod
     def perimeter(self):
-        raise NotImplementedError('The perimeter is not implemented')
+        raise NotImplementedError("The perimeter is not implemented")
 
     @classmethod
     def info(cls):
@@ -37,11 +37,11 @@ class Circle(Figure):
 
     @override
     def perimeter(self):
-        return f'{2 * self.radius * math.pi:.3f}'
+        return f"{2 * self.radius * math.pi:.3f}"
 
     @override
     def area(self):
-        return f'{self.radius * self.radius * math.pi:.3f}'
+        return f"{self.radius * self.radius * math.pi:.3f}"
 
 
 rectangle = Rectangle(4, 5)

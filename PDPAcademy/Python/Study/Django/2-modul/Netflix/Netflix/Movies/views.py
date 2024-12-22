@@ -50,15 +50,19 @@ from django_filters.rest_framework import DjangoFilterBackend
 class MovieViewSet(ModelViewSet):
     queryset = Movie.objects.all()
     serializer_class = MovieSerializer
-    filter_backends = (DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter,)
-    filterset_fields = ('genre',)
-    search_fields = ('name', 'year', 'actors__name')
-    ordering_fields = ('imdb',)
+    filter_backends = (
+        DjangoFilterBackend,
+        filters.SearchFilter,
+        filters.OrderingFilter,
+    )
+    filterset_fields = ("genre",)
+    search_fields = ("name", "year", "actors__name")
+    ordering_fields = ("imdb",)
 
     @action(detail=True, methods=["POST"], url_path="add-actor")
     def add_actors(self, request, *args, **kwargs):
         movie = self.get_object()
-        actor_id = request.data.get('id')
+        actor_id = request.data.get("id")
         if not actor_id:
             return Response({"error": "Actor id berilmagan"})
         try:
@@ -73,7 +77,7 @@ class MovieViewSet(ModelViewSet):
     @action(detail=True, methods=["DELETE"], url_path="remove-actor")
     def remove_actors(self, request, *args, **kwargs):
         movie = self.get_object()
-        actor_id = request.data.get('id')
+        actor_id = request.data.get("id")
         if not actor_id:
             return Response({"error": "Actor id berilmagan"})
         try:
@@ -93,10 +97,12 @@ class ActorViewSet(ModelViewSet):
 
 class MovieActorAPIView(ModelViewSet):
     def get_queryset(self):
-        movie_id = self.kwargs['id']
+        movie_id = self.kwargs["id"]
         movie = Movie.objects.get(id=movie_id)
         return movie.actors.all()
+
     serializer_class = ActorSerializer
+
 
 #
 # class CommentViewSet(ModelViewSet):

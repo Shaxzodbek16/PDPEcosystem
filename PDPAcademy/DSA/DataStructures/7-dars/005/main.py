@@ -18,7 +18,6 @@ class BinaryTree:
             else:
                 self.right.insert(value)
 
-
     def printAllLeaves(self, node, result=None):
         if result is None:
             result = []
@@ -50,14 +49,12 @@ class BinaryTree:
             node = node.right
 
         return node.value
-    
 
     def is_symmetric(self, root):
         if root is None:
             return True
 
         return self.is_same(root.left, root.right)
-
 
     def is_same(self, node1, node2):
         if node1 is None and node2 is None:
@@ -67,8 +64,9 @@ class BinaryTree:
         elif node1.value != node2.value:
             return False
         else:
-            return self.is_same(node1.left, node2.right) and self.is_same(node1.right, node2.left)
-        
+            return self.is_same(node1.left, node2.right) and self.is_same(
+                node1.right, node2.left
+            )
 
     def k_level_nodes(self, root, k):
         if k == 0:

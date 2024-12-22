@@ -129,7 +129,9 @@ class WorkingEngineer:
         self.__engineer = engineer
 
     def working_code(self):
-        if isinstance(self.__engineer, Tester) and not isinstance(self.__engineer, Developer):
+        if isinstance(self.__engineer, Tester) and not isinstance(
+            self.__engineer, Developer
+        ):
             self.__engineer.testing_code()
         elif isinstance(self.__engineer, Union[Developer, Tester]):
             self.__engineer.testing_code()

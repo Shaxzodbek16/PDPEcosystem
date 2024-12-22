@@ -12,6 +12,7 @@ from email.generator import Generator
 # tup = (x for x in range(1, 5))
 # print(next(tup), next(tup), next(tup), next(tup))
 
+
 # def get_list():
 #     for num in range(10):
 #         yield num
@@ -30,7 +31,7 @@ def conn(n):
 def is_prime(n):
     if n <= 1:
         return False
-    for num in range(2, int(n ** 0.5) + 1):
+    for num in range(2, int(n**0.5) + 1):
         if n % num == 0:
             return False
     return True

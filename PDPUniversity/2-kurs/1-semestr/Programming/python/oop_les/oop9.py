@@ -8,7 +8,7 @@ class Human(ABC):
 
     @abstractmethod
     def voice(self):
-        raise NotImplementedError(f'Set voice() for {self.__class__.__name__}')
+        raise NotImplementedError(f"Set voice() for {self.__class__.__name__}")
 
 
 class Student(Human):
@@ -18,7 +18,7 @@ class Student(Human):
 
     @override
     def voice(self):
-        return f'Hello by {self.name} who is student'
+        return f"Hello by {self.name} who is student"
 
 
 class Teacher(Human):
@@ -28,7 +28,7 @@ class Teacher(Human):
 
     @override
     def voice(self):
-        return f'Hello by {self.name} who is teacher'
+        return f"Hello by {self.name} who is teacher"
 
 
 class Director(Human):
@@ -38,10 +38,10 @@ class Director(Human):
 
     @override
     def voice(self):
-        return f'Hello by {self.name} who is director'
+        return f"Hello by {self.name} who is director"
 
 
-people = [Student('Shaxzodbek'), Teacher('Botir'), Director('Odilbek')]
+people = [Student("Shaxzodbek"), Teacher("Botir"), Director("Odilbek")]
 
 for person in people:
     print(person.voice())

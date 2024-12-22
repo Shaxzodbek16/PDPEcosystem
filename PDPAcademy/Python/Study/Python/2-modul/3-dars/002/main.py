@@ -1,28 +1,28 @@
 # Calculator nomli class yarating.
 # add, subtract, multiply, divide nomi static metodlar qo'shing.
 
-# Misol: 
+# Misol:
+
 
 class Calculator:
     @staticmethod
     def add(a, b):
         return a + b
-    
+
     @staticmethod
     def subtract(a, b):
         return a - b
-    
+
     @staticmethod
     def multiply(a, b):
         return a * b
-    
+
     @staticmethod
     def divide(a, b):
         try:
             return a / b
         except ZeroDivisionError:
             print("Can't divide by 0")
-
 
 
 print(Calculator.add(1, 2))  # 3

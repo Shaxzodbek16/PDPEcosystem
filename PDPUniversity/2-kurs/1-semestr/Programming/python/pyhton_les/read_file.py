@@ -14,18 +14,18 @@
 #     print('File not found')
 
 
-def write_to_file(value: str, file: str = 'file.txt') -> bool:
+def write_to_file(value: str, file: str = "file.txt") -> bool:
     try:
-        with open(file, 'w') as f:
+        with open(file, "w") as f:
             f.write(value)
             return True
     except (FileNotFoundError, Exception):
         return False
 
 
-is_done = write_to_file('Hello, Shaxzodbek', 'main.txt')
+is_done = write_to_file("Hello, Shaxzodbek", "main.txt")
 
 if is_done:
-    print('Done')
+    print("Done")
 else:
-    print('Failed')
+    print("Failed")

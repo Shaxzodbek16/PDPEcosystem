@@ -7,34 +7,49 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Actor',
+            name="Actor",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=50)),
-                ('birthdate', models.DateField()),
-                ('gender', models.CharField(max_length=50)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=50)),
+                ("birthdate", models.DateField()),
+                ("gender", models.CharField(max_length=50)),
             ],
             options={
-                'db_table': 'Actors',
+                "db_table": "Actors",
             },
         ),
         migrations.CreateModel(
-            name='Movie',
+            name="Movie",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('year', models.IntegerField()),
-                ('imdb', models.FloatField()),
-                ('genre', models.CharField(max_length=100)),
-                ('actors', models.ManyToManyField(to='Movies.actor')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=100)),
+                ("year", models.IntegerField()),
+                ("imdb", models.FloatField()),
+                ("genre", models.CharField(max_length=100)),
+                ("actors", models.ManyToManyField(to="Movies.actor")),
             ],
             options={
-                'db_table': 'Movie',
+                "db_table": "Movie",
             },
         ),
     ]

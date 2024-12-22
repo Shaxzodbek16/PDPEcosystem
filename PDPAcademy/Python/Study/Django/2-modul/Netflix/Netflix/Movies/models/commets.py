@@ -14,5 +14,5 @@ class Comment(models.Model):
         return f"{text} by {self.user_id} to {self.movie_id}"
 
     class Meta:
-        ordering = ['created_date']
-        db_table = 'Comments'
+        ordering = ["created_date"]
+        db_table = "Comments"

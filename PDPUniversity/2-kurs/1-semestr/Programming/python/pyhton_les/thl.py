@@ -21,30 +21,24 @@ def factorial(num):
 
 def math_table(num):
     for i in range(1, num + 1):
-        print(f'\n{i} table\n')
+        print(f"\n{i} table\n")
         for j in range(1, 11):
             print(f"{i} x {j} = {i * j}")
 
 
 def highest_student(info):
-    student_averages = {
-        name: sum(marks) / len(marks)
-        for name, marks in info
-    }
+    student_averages = {name: sum(marks) / len(marks) for name, marks in info}
 
-    return dict(sorted(
-        student_averages.items(),
-        key=lambda x: (-x[1], x[0])
-    ))
+    return dict(sorted(student_averages.items(), key=lambda x: (-x[1], x[0])))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     data = [
-        ('Alina', [4, 3, 5]),
-        ('Ivan', [5, 4, 4]),
-        ('Cholie', [7, 8, 9]),
-        ('Islom', [6, 3, 4]),
-        ('Alex', [7, 8, 9]),
+        ("Alina", [4, 3, 5]),
+        ("Ivan", [5, 4, 4]),
+        ("Cholie", [7, 8, 9]),
+        ("Islom", [6, 3, 4]),
+        ("Alex", [7, 8, 9]),
     ]
 
     marks = highest_student(data)

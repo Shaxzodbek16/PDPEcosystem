@@ -1,7 +1,8 @@
-# Task 1. Darsda o`tilgan LinkedList dan berilgan 
-# elementni qidiradigan Search funksiya yarating 
+# Task 1. Darsda o`tilgan LinkedList dan berilgan
+# elementni qidiradigan Search funksiya yarating
 # hamda uning Time Complexity sini aniqlang.
 # public boolean search(int item)
+
 
 class Node(object):
     def __init__(self, data=None):
@@ -15,5 +16,6 @@ class Node(object):
                 return True
             current = current.next
         return False
+
     # Time Complexity O(n)
     # Space Complexity O(1)

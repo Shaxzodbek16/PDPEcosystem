@@ -1,5 +1,5 @@
 class Person:
-    __name: str = 'Person'
+    __name: str = "Person"
 
     def get_name(self):
         return self.__name

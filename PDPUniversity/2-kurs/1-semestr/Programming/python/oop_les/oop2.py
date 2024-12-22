@@ -8,15 +8,15 @@ class Point:
 
     @staticmethod
     def area(r):
-        return r ** 2 * 3.14
+        return r**2 * 3.14
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     pt = Point(1, 2)
     pt(1, 2, 3, a=5, b=6)
     a = pt.area(10)
     print(a)
-    print('- ' * 20)
+    print("- " * 20)
 
 
 class Student:
@@ -31,12 +31,12 @@ class Student:
         return cls.counter
 
 
-if __name__ == '__main__':
-    st = Student('Jasur')
+if __name__ == "__main__":
+    st = Student("Jasur")
     print(st.show_count_student())
-    st2 = Student('Mahmud')
+    st2 = Student("Mahmud")
     print(st2.show_count_student())
-    print('- ' * 20)
+    print("- " * 20)
 
 
 class Counter:
@@ -57,7 +57,7 @@ class Counter:
         return Counter.call_count
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     ct = Counter()
 
     print(ct(10))

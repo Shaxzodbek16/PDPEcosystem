@@ -4,5 +4,23 @@
 
 
 def long(*ismlar):
-    print(max(ismlar, key=len,))
-long('salom','apple','green','orange','black','blue','green','orange','black','orange')
+    print(
+        max(
+            ismlar,
+            key=len,
+        )
+    )
+
+
+long(
+    "salom",
+    "apple",
+    "green",
+    "orange",
+    "black",
+    "blue",
+    "green",
+    "orange",
+    "black",
+    "orange",
+)

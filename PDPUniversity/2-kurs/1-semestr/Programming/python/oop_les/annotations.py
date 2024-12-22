@@ -22,5 +22,4 @@ def subtract(a: int, b: int) -> int:
 
 
 def power(a: int, b: int) -> int:
-    return a ** b
-
+    return a**b

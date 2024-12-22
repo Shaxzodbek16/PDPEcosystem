@@ -31,40 +31,29 @@ from typing import Tuple, Any
 # print(max_finder2(9, 2, 3))
 # print(max_finder2(5, 5, 5))
 
+
 def _(data, max_price=False, min_price=False):
-    item_name = data[0]['name']
+    item_name = data[0]["name"]
     if max_price:
-        max_price = data[0]['price']
+        max_price = data[0]["price"]
         for i in data:
-            if i['price'] > max_price:
-                max_price = i['price']
-                item_name = i['name']
+            if i["price"] > max_price:
+                max_price = i["price"]
+                item_name = i["name"]
         return item_name, max_price
-    min_price = data[0]['price']
+    min_price = data[0]["price"]
     if min_price:
         for i in data:
-            if i['price'] < min_price:
-                min_price = i['price']
-                item_name = data[0]['name']
+            if i["price"] < min_price:
+                min_price = i["price"]
+                item_name = data[0]["name"]
         return item_name, min_price
 
+
 __ = [
-    {
-        'name': 'laptop',
-        'price': 1500
-    },
-    {
-        'name':'smartphone',
-        'price': 1000
-    },
-    {
-        'name': 'watch',
-        'price': 700
-    },
-    {
-        'name': 'Headphone',
-        'price': 500
-    }
+    {"name": "laptop", "price": 1500},
+    {"name": "smartphone", "price": 1000},
+    {"name": "watch", "price": 700},
+    {"name": "Headphone", "price": 500},
 ]
 print(*_(__, max_price=True))
-

@@ -1,6 +1,6 @@
 try:
     print(1 / 0)
 except ZeroDivisionError:
-    print(float('inf'))
+    print(float("inf"))
 except TypeError:
-    print('Number expected')
+    print("Number expected")

@@ -2,9 +2,9 @@ import asyncio
 
 
 async def async_example(number: int) -> str:
-    print('Starting example function with number:', number)
+    print("Starting example function with number:", number)
     await asyncio.sleep(2)
-    print('Finished example function with number:', number)
+    print("Finished example function with number:", number)
     return str(number)
 
 

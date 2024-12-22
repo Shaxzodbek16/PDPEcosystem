@@ -1,5 +1,7 @@
 import unittest
 from TournamentSystem import TournamentScoringSystem
+
+
 class TestTournamentScoringSystem(unittest.TestCase):
     def setUp(self):
         self.system = TournamentScoringSystem()
@@ -9,5 +11,6 @@ class TestTournamentScoringSystem(unittest.TestCase):
         self.assertEqual(self.system.scores, {})
         self.assertEqual(self.system.players, {})
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

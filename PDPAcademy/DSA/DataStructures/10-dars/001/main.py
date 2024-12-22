@@ -11,6 +11,7 @@ algorithm to find a spanning tree for an undirected graph:
 
 """
 
+
 class Graph:
     def __init__(self):
         self.nodes = {}
@@ -24,7 +25,9 @@ class Graph:
             self.nodes[from_label].append(to_label)
             self.nodes[to_label].append(from_label)
         else:
-            raise ValueError(f"One or both of the nodes ({from_label}, {to_label}) do not exist.")
+            raise ValueError(
+                f"One or both of the nodes ({from_label}, {to_label}) do not exist."
+            )
 
     def remove_node(self, label):
         if label in self.nodes:

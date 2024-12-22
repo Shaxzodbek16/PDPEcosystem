@@ -16,17 +16,14 @@ class Product(BaseModel):
     quantity: int
 
 
-image_dict = {
-    'img': 'banana.jpg',
-    'webp': 1
-}
+image_dict = {"img": "banana.jpg", "webp": 1}
 
 banana_dict = {
-    'title': 'Banana',
-    'description': 'Fruit',
-    'price': (1.0, 2.0, 3.0),
-    'image': image_dict,
-    'quantity': 20
+    "title": "Banana",
+    "description": "Fruit",
+    "price": (1.0, 2.0, 3.0),
+    "image": image_dict,
+    "quantity": 20,
 }
 
 banana = Product(**banana_dict)

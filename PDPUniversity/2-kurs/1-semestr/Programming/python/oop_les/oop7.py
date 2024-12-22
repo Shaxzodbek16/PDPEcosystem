@@ -19,4 +19,4 @@ class Student:
         return len(self.marks)
 
 
-st = Student('Jasur', [1, 2, 3, 4, 5])
+st = Student("Jasur", [1, 2, 3, 4, 5])

@@ -15,31 +15,31 @@ class Animal(ABC):
 class Dog(Animal):
     @override
     def speak(self) -> str:
-        return 'Woof'
+        return "Woof"
 
     @override
     def move(self) -> str:
-        return f'{self.__class__.__name__} running'
+        return f"{self.__class__.__name__} running"
 
 
 class Cat(Animal):
     @override
     def speak(self) -> str:
-        return 'Meow'
+        return "Meow"
 
     @override
     def move(self) -> str:
-        return f'{self.__class__.__name__} running'
+        return f"{self.__class__.__name__} running"
 
 
 class Bird(Animal):
     @override
     def speak(self) -> str:
-        return 'bird voice'
+        return "bird voice"
 
     @override
     def move(self) -> str:
-        return f'{self.__class__.__name__} flying'
+        return f"{self.__class__.__name__} flying"
 
 
 def animal_behavior(animals: list[Animal]) -> None:
@@ -53,5 +53,5 @@ def main() -> None:
     animal_behavior(animals)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

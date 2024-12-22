@@ -12,7 +12,7 @@ while True:
     if user_input.isdigit():
         num = int(user_input)
         if num % 2 == 0:
-            even_sum +=num
+            even_sum += num
     else:
         print("Enter a valid number or stop")
 

@@ -77,26 +77,27 @@ class User:
     def add_friend(self, friend):
         if friend not in self.friends:
             self.friends.append(friend)
-            return 'Successfully added friend'
-        return 'Already added friend'
+            return "Successfully added friend"
+        return "Already added friend"
 
     def add_post(self, post):
         if post not in self.posts:
             self.posts.append(post)
-            return 'Successfully added post'
-        return 'Already added post'
+            return "Successfully added post"
+        return "Already added post"
 
     def list_posts(self):
         return self.posts
 
 
-user = User('Shaxzodbek')
-print(user.add_friend('Jasur'))
-print(user.add_friend('Jasur'))
-print(user.add_post('Shaxzodbek\'s post'))
-print(user.add_post('Shaxzodbek\'s post'))
+user = User("Shaxzodbek")
+print(user.add_friend("Jasur"))
+print(user.add_friend("Jasur"))
+print(user.add_post("Shaxzodbek's post"))
+print(user.add_post("Shaxzodbek's post"))
 print(user.list_posts())
 print(user.friends)
+
 
 @dataclass
 class TaskQueue:
@@ -104,26 +105,26 @@ class TaskQueue:
 
     def add_task(self, task):
         self.task.append(task)
-        return 'Successfully added task'
+        return "Successfully added task"
 
     def next_task(self):
         try:
             return self.task.pop()
         except IndexError:
-            return 'No task'
+            return "No task"
 
     def list_tasks(self):
-        return self.task if len(self.task) > 0 else 'No task in queue'
+        return self.task if len(self.task) > 0 else "No task in queue"
+
 
 queue = TaskQueue()
 
-print(queue.add_task('Do something'))
-print(queue.add_task('Do something 2'))
+print(queue.add_task("Do something"))
+print(queue.add_task("Do something 2"))
 print(queue.list_tasks())
 print(queue.next_task())
 print(queue.next_task())
 print(queue.next_task())
 print(queue.next_task())
-print(queue.add_task('Do something'))
+print(queue.add_task("Do something"))
 print(queue.list_tasks())
-

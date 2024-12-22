@@ -19,14 +19,10 @@
 
 
 def voice(self):
-    return 'RR RR'
+    return "RR RR"
 
-Animal = type('Animal', (), {
-    'name': 'Alex',
-    'age':23,
-    'type': 'Lion',
-    'voice': voice
-})
+
+Animal = type("Animal", (), {"name": "Alex", "age": 23, "type": "Lion", "voice": voice})
 
 a = Animal()
 print(a.name)

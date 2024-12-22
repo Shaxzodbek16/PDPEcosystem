@@ -7,28 +7,36 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('courses', '0006_remove_subject_teacher_subject_teachers_and_more'),
+        ("courses", "0006_remove_subject_teacher_subject_teachers_and_more"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='subject',
-            name='specialities',
+            model_name="subject",
+            name="specialities",
         ),
         migrations.RemoveField(
-            model_name='subject',
-            name='teachers',
+            model_name="subject",
+            name="teachers",
         ),
         migrations.AddField(
-            model_name='subject',
-            name='specialities',
-            field=models.ForeignKey(default=-1, on_delete=django.db.models.deletion.CASCADE, to='courses.speciality'),
+            model_name="subject",
+            name="specialities",
+            field=models.ForeignKey(
+                default=-1,
+                on_delete=django.db.models.deletion.CASCADE,
+                to="courses.speciality",
+            ),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='subject',
-            name='teachers',
-            field=models.ForeignKey(default=-2, on_delete=django.db.models.deletion.CASCADE, to='courses.teacher'),
+            model_name="subject",
+            name="teachers",
+            field=models.ForeignKey(
+                default=-2,
+                on_delete=django.db.models.deletion.CASCADE,
+                to="courses.teacher",
+            ),
             preserve_default=False,
         ),
     ]

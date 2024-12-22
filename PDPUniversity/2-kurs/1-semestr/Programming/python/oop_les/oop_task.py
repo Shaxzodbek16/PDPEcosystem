@@ -6,7 +6,7 @@ class Number:
         return str(self.number)
 
     def __repr__(self):
-        return f'{self.__class__.__name__}: {self.number}'
+        return f"{self.__class__.__name__}: {self.number}"
 
     def __abs__(self):
         return abs(self.number)

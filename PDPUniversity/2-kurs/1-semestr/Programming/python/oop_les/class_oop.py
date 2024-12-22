@@ -1,6 +1,6 @@
 class Cats:
-    name = 'Alex'
-    color = 'black'
+    name = "Alex"
+    color = "black"
     age = 2
 
     def set_name(self, new_name, new_color, new_age):
@@ -9,25 +9,25 @@ class Cats:
         self.age = new_age
 
     def meow(self):
-        print('Meow', self.name)
+        print("Meow", self.name)
 
     def get_name(self):
         return self.name, self.color, self.age
 
 
 ct = Cats()
-ct.set_name('Alex', 'blue', 2)
-setattr(ct, 'color', 'red')
-setattr(ct, 'age', 40)
+ct.set_name("Alex", "blue", 2)
+setattr(ct, "color", "red")
+setattr(ct, "age", 40)
 # setattr(ct, 'weight', 40)
 print(ct.__dict__)
 print(ct.get_name())
-print(getattr(ct, 'color'))  # go to command + tap the func and read docs
-print(getattr(ct, 'name'))
-print(getattr(ct, 'age'))
-print(getattr(ct, 'weight', False))
-print(hasattr(ct, 'color'))
-delattr(ct, 'color')
+print(getattr(ct, "color"))  # go to command + tap the func and read docs
+print(getattr(ct, "name"))
+print(getattr(ct, "age"))
+print(getattr(ct, "weight", False))
+print(hasattr(ct, "color"))
+delattr(ct, "color")
 print(ct.__dict__)
 
 
@@ -48,8 +48,8 @@ class Dog:
 
     def bark(self):
         if self.weight:
-            return 'Woof' + self.breed
-        return 'Set weight'
+            return "Woof" + self.breed
+        return "Set weight"
 
 
 dog = Dog()
@@ -132,7 +132,7 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return math.pi * self.radius ** 2
+        return math.pi * self.radius**2
 
     def perimeter(self):
         return 2 * math.pi * self.radius
@@ -181,12 +181,7 @@ class Polygon(Shape):
         return f"Polygon(side_length={self.side_length}, num_sides={self.num_sides})"
 
 
-shapes = [
-    Circle(5),
-    Rectangle(4, 6),
-    Square(4),
-    Polygon(3, 5)
-]
+shapes = [Circle(5), Rectangle(4, 6), Square(4), Polygon(3, 5)]
 
 for shape in shapes:
     print(shape)
@@ -275,5 +270,5 @@ class Person(object):
         del self.__name
 
 
-ps = Person('John', 24)
+ps = Person("John", 24)
 print(ps.name)

@@ -9,10 +9,11 @@ from aiogram.filters import CommandStart
 from aiogram.types import Message
 
 import environ
-environ.Env.read_env('../.env')
+
+environ.Env.read_env("../.env")
 env = environ.Env()
 
-BOT_TOKEN = env('BOT_TOKEN')
+BOT_TOKEN = env("BOT_TOKEN")
 
 TOKEN = BOT_TOKEN
 

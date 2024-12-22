@@ -1,15 +1,19 @@
 import sqlite3
 import sys
+
+
 class FinanceManager:
-    def __init__(self, db_file='finance.db'):
+    def __init__(self, db_file="finance.db"):
         self.conn = sqlite3.connect(db_file)
         self.c = self.conn.cursor()
-        self.c.execute('''
+        self.c.execute(
+            """
             CREATE TABLE IF NOT EXISTS finance (
                 id INTEGER PRIMARY KEY,
                 balance INTEGER
             )
-        ''')
+        """
+        )
 
     def earn(self, amount):
         self.c.execute("INSERT INTO finance (balance) VALUES (?)", (amount,))
@@ -26,6 +30,7 @@ class FinanceManager:
 
     def close_connection(self):
         self.conn.close()
+
 
 if __name__ == "__main__":
     if len(sys.argv) > 3:

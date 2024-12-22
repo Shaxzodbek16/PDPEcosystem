@@ -9,7 +9,7 @@ class Product:
         self.price = price
 
     def __repr__(self):
-        return f'Product(product_id={self.product_id} name={self.name}, quantity={self.quantity}, price={self.price})'
+        return f"Product(product_id={self.product_id} name={self.name}, quantity={self.quantity}, price={self.price})"
 
     def __str__(self):
         return self.__repr__()
@@ -21,9 +21,9 @@ class Warehouse(Product):
 
     def add_product(self, product_id, product_address):
         if product_id in self.products.keys():
-            return 'The product already exists'
+            return "The product already exists"
         self.products[product_id] = product_address
-        return 'Successfully added the product'
+        return "Successfully added the product"
 
     def get_products(self):
         return self.products
@@ -31,11 +31,11 @@ class Warehouse(Product):
     def remove_product(self, product_id):
         if product_id in self.products.keys():
             del self.products[product_id]
-            return 'Successfully removed the product'
-        return 'The product does not exist'
+            return "Successfully removed the product"
+        return "The product does not exist"
 
 
-product = Product('Cup', 2, 10, 20000)
+product = Product("Cup", 2, 10, 20000)
 warehouse = Warehouse()
 print(warehouse.add_product(product.product_id, uuid4().int))
 print(warehouse.get_products())

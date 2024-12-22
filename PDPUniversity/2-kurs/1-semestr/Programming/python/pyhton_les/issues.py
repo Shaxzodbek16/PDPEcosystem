@@ -23,7 +23,7 @@ print(generate(10))
 def check(word1, word2, curr):
     n = min(len(word1), len(word2), len(curr))
     i = 0
-    res = ''
+    res = ""
     while n != 0:
         if word1[i] == word2[i] == curr[i]:
             res += word1[i]
@@ -36,8 +36,9 @@ def check(word1, word2, curr):
 
 
 def longestCommonPrefix(words: list) -> str:
-    result = ''
-    if not words: return result
+    result = ""
+    if not words:
+        return result
     result = words[0]
     l, h = 0, len(words) - 1
     while l != h:
@@ -51,7 +52,7 @@ print(result1)
 
 
 def longestPalindrome(s: str) -> str:
-    result = ''
+    result = ""
     i, j = 0, len(s) - 1
     while j + 1:
         if s[j] != s[i]:

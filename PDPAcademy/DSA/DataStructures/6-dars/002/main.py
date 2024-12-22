@@ -7,4 +7,4 @@ def find_first_non_repeating_char(string):
         if char_count[char] == 1:
             return char
 
-    return 'all repeated characters'
+    return "all repeated characters"

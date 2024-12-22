@@ -3,5 +3,6 @@ def float_range(from_, to_, step_):
         yield from_
         from_ += step_
 
-for i in float_range(0,10,0.5):
+
+for i in float_range(0, 10, 0.5):
     print(i)

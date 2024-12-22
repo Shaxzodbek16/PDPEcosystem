@@ -1,7 +1,8 @@
 from datetime import datetime
 import time
 import sys
-now =  datetime.now()
+
+now = datetime.now()
 # print(now.strftime("%X"))
 
 # while True:
@@ -20,9 +21,3 @@ try:
 except KeyboardInterrupt:
     print("\nSuccessfully stopped")
     sys.exit()
-
-
-
-    
-
-    

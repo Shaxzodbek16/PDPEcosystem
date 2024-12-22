@@ -6,18 +6,20 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('Movies', '0005_remove_actor_movies_movie_actors'),
+        ("Movies", "0005_remove_actor_movies_movie_actors"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='actor',
-            name='gender',
-            field=models.CharField(choices=[('M', 'Male'), ('F', 'Female')], default='M', max_length=10),
+            model_name="actor",
+            name="gender",
+            field=models.CharField(
+                choices=[("M", "Male"), ("F", "Female")], default="M", max_length=10
+            ),
         ),
         migrations.AlterField(
-            model_name='movie',
-            name='actors',
-            field=models.ManyToManyField(related_name='movies', to='Movies.actor'),
+            model_name="movie",
+            name="actors",
+            field=models.ManyToManyField(related_name="movies", to="Movies.actor"),
         ),
     ]

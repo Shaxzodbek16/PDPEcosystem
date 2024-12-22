@@ -1,7 +1,8 @@
-# Task 5. Darsda o`tilgan LinkedList ning elementlarini 
-# teskarisiga o`zgartiradigan funksiya yarating hamda 
+# Task 5. Darsda o`tilgan LinkedList ning elementlarini
+# teskarisiga o`zgartiradigan funksiya yarating hamda
 # uning Time Complexity sini aniqlang.
 # public void reverse()
+
 
 class Node(object):
     def __init__(self, data=None):
@@ -15,9 +16,10 @@ class Node(object):
                 return True
             current = current.next
         return False
+
     # Time Complexity O(n)
     # Space Complexity O(1)
-    
+
     def lastIndexOf(self, item):
         current = self
         last_index = -1
@@ -28,9 +30,10 @@ class Node(object):
             current = current.next
             index += 1
         return last_index
+
     # Time Complexity O(n)
     # Space Complexity O(1)
-    
+
     def printMiddle(self):
         slow = self
         fast = self
@@ -38,10 +41,10 @@ class Node(object):
             slow = slow.next
             fast = fast.next.next
         print("Middle element is: ", slow.data)
-    
+
     # Time Complexity O(n)
     # Space Complexity O(1)
-    
+
     def getKthFromEnd(self, k):
         slow = self
         fast = self
@@ -53,9 +56,10 @@ class Node(object):
             slow = slow.next
             fast = fast.next
         return slow.data
+
     # Time Complexity O(n)
     # Space Complexity O(1)
-    
+
     def reverse(self):
         prev = None
         current = self
@@ -65,6 +69,6 @@ class Node(object):
             prev = current
             current = next_node
         self.head = prev
-    
+
     # Time Complexity O(n)
     # Space Complexity O(1)

@@ -9,22 +9,22 @@ Input: a = 2, b = 2, c = 4
 Natija: "Tenglama 0ta yechimga ega"
 
 Input: a = 1, b = 6, c = 8
-Natija: "Tenglama 2ta yechimga ega"""""
+Natija: "Tenglama 2ta yechimga ega""" ""
 
 while True:
     try:
-        a =int(input("Enter 'a' number:\n>>> "))
-        b =int(input("Enter 'b' number:\n>>> "))
-        c =int(input("Enter 'c' number:\n>>> "))
+        a = int(input("Enter 'a' number:\n>>> "))
+        b = int(input("Enter 'b' number:\n>>> "))
+        c = int(input("Enter 'c' number:\n>>> "))
         break
     except ValueError:
         print("Please enter a number")
 
-dic=b**2-4*a*c
+dic = b**2 - 4 * a * c
 
-if dic>0:
-    print('Tenglama 2 ta yechimga ega')
-elif dic==0:
-    print('Tenglama 1 ta yechimga ega')
-elif dic<0:
-    print('Tenglama yechimga ega emas')
+if dic > 0:
+    print("Tenglama 2 ta yechimga ega")
+elif dic == 0:
+    print("Tenglama 1 ta yechimga ega")
+elif dic < 0:
+    print("Tenglama yechimga ega emas")

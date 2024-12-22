@@ -1,5 +1,5 @@
 # #  Task 1
-# Darsda o`tilgan Trie(Array) da so`zni o`chirish imkoniyatini yarating. 
+# Darsda o`tilgan Trie(Array) da so`zni o`chirish imkoniyatini yarating.
 # public void remove(String word)
 
 
@@ -7,6 +7,7 @@ class TrieNode:
     def __init__(self):
         self.children = {}
         self.is_end_of_word = False
+
 
 class Trie:
     def __init__(self):
@@ -55,4 +56,5 @@ class Trie:
                 return True
 
             return False
+
         _remove_helper(self.root, word, 0)

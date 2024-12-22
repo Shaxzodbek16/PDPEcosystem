@@ -3,14 +3,45 @@ import random
 
 
 async def prepare_order(name: str, preparing_time: int) -> None:
-    print('Preparing order for:', name, 'in', preparing_time, 'seconds')
+    print("Preparing order for:", name, "in", preparing_time, "seconds")
     await asyncio.sleep(preparing_time)
-    print(f'Order prepared for: {name} in {preparing_time} seconds')
+    print(f"Order prepared for: {name} in {preparing_time} seconds")
 
 
-names = ['John', 'Doe', 'Jane', 'Alice', 'Bob', 'Eve', 'Mallory', 'Trudy', 'Carol', 'Charlie', 'David', 'Frank',
-         'Grace', 'Heidi', 'Ivan', 'Jack', 'Kevin', 'Larry', 'Mallory', 'Nancy', 'Oscar', 'Peggy', 'Quentin', 'Romeo',
-         'Sue', 'Trent', 'Ursula', 'Victor', 'Walter', 'Xander', 'Yvonne', 'Zelda']
+names = [
+    "John",
+    "Doe",
+    "Jane",
+    "Alice",
+    "Bob",
+    "Eve",
+    "Mallory",
+    "Trudy",
+    "Carol",
+    "Charlie",
+    "David",
+    "Frank",
+    "Grace",
+    "Heidi",
+    "Ivan",
+    "Jack",
+    "Kevin",
+    "Larry",
+    "Mallory",
+    "Nancy",
+    "Oscar",
+    "Peggy",
+    "Quentin",
+    "Romeo",
+    "Sue",
+    "Trent",
+    "Ursula",
+    "Victor",
+    "Walter",
+    "Xander",
+    "Yvonne",
+    "Zelda",
+]
 
 
 async def main() -> None:

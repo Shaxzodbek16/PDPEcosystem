@@ -3,13 +3,14 @@
  jami eng ko'p kasalxonalar qurilgan 
  3ta viloyatni ekranga chiqaradigan dastur tuzing.
 """
+
 import csv
 
 dict = {}
-with open(f"../files/hospitals.csv", 'r') as fh:
+with open(f"../files/hospitals.csv", "r") as fh:
     file = csv.reader(fh, delimiter=";")
     for i in file:
-        if i[0] == 'Hududlar':
+        if i[0] == "Hududlar":
             continue
         list_ = i[15:21]
         dict[i[0]] = list_
@@ -23,8 +24,11 @@ for key, lists in dict.items():
 # sorted_dict = dict(sorted(new_dic.items()), reverse=True)
 sorted_dict = sorted(new_dic.items(), key=lambda item: item[1], reverse=True)
 
-print("\n2012-2017-yillar oralig'ida jami eng ko'p kasalxonalar qurilgan 3ta viloyatlar bu:\n")
+print(
+    "\n2012-2017-yillar oralig'ida jami eng ko'p kasalxonalar qurilgan 3ta viloyatlar bu:\n"
+)
 for i in range(3):
-    print(f"{i + 1}-orinni {sorted_dict[i][1]} ta shifoxona bilan {sorted_dict[i][0]} egalladi.\n")
-# 15-21 
-
+    print(
+        f"{i + 1}-orinni {sorted_dict[i][1]} ta shifoxona bilan {sorted_dict[i][0]} egalladi.\n"
+    )
+# 15-21

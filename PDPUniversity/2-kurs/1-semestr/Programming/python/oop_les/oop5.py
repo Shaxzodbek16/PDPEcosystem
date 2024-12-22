@@ -3,22 +3,22 @@ class Clock:
 
     def __init__(self, seconds: int) -> None:
         if not isinstance(seconds, int) or seconds < 0:
-            raise TypeError('seconds must be a positive integer')
+            raise TypeError("seconds must be a positive integer")
         self.seconds = seconds % self.__DAY
 
     def get_time(self) -> str:
         s = self.seconds % 60
         m = (self.seconds // 60) % 60
         h = (self.seconds // 3600) % 24
-        return f'{self.__get_formatted(h)}:{self.__get_formatted(m)}:{self.__get_formatted(s)}'
+        return f"{self.__get_formatted(h)}:{self.__get_formatted(m)}:{self.__get_formatted(s)}"
 
     @staticmethod
     def __get_formatted(x: int) -> str:
-        return str(x).rjust(2, '0')
+        return str(x).rjust(2, "0")
 
     def __add__(self, other):
         if not isinstance(other, (Clock, int)):
-            raise ArithmeticError('Other must be an instance of Clock')
+            raise ArithmeticError("Other must be an instance of Clock")
         sc = other
         if isinstance(other, Clock):
             sc = other.seconds

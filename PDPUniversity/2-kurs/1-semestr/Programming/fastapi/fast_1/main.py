@@ -42,37 +42,42 @@ async def read_root():
 async def read_root():
     return {"message": "This is a trace method"}
 
-@app.get('/hello')
+
+@app.get("/hello")
 async def hello():
     return {"message": "Hello PDP"}
 
-@app.post('/submit')
+
+@app.post("/submit")
 async def submit(path_parameter: str):
     return {"message": f"Hello {path_parameter}"}
 
-@app.put('/update')
+
+@app.put("/update")
 async def update():
     return {"message": "Data updated successfully"}
 
 
-@app.delete('/delete')
+@app.delete("/delete")
 async def delete():
     return {"message": "Data deleted successfully"}
 
-@app.patch('/patch')
+
+@app.patch("/patch")
 async def patch():
     return {"message": "Data patched successfully"}
 
-@app.options('/options')
+
+@app.options("/options")
 async def options():
     return {"message": "Options method called"}
 
-@app.head('/head')
+
+@app.head("/head")
 async def head():
     return {"message": "Head method called"}
 
-@app.trace('/trace')
+
+@app.trace("/trace")
 async def trace():
     return {"message": "Trace method called"}
-
-

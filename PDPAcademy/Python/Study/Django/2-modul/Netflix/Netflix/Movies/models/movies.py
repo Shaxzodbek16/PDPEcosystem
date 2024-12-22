@@ -7,10 +7,10 @@ class Movie(models.Model):
     year = models.IntegerField()
     imdb = models.FloatField()  # the film rating between 1 and 10.
     genre = models.CharField(choices=choices_movies, max_length=50)
-    actors = models.ManyToManyField('Movies.Actor', related_name='movies')
+    actors = models.ManyToManyField("Movies.Actor", related_name="movies")
 
     def __str__(self):
         return self.name
 
     class Meta:
-        db_table = 'Movie'
+        db_table = "Movie"

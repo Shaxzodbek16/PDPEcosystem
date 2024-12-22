@@ -1,4 +1,5 @@
 """IndexError va KeyError hosil qiladigan kod yozing"""
+
 ########################################################################
 
 
@@ -12,5 +13,3 @@
 # KeyError #
 # ages = {'Jim': 30, 'Pam': 28, 'Kevin': 33}
 # print(ages['Michael'])  # there is KeyError
-
-

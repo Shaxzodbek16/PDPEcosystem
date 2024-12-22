@@ -1,2 +1,2 @@
-#this is hello world program
-print('Hello, World!')
+# this is hello world program
+print("Hello, World!")

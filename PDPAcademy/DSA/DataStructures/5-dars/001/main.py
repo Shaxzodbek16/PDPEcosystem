@@ -1,4 +1,4 @@
-# Task 1. Priority Queue ni java.util dagi holatini darsda o`rgandik. 
+# Task 1. Priority Queue ni java.util dagi holatini darsda o`rgandik.
 # Va shu Priority Queue ni Array dan foydalanib o`zingiz yaratib ko`rsating
 
 
@@ -17,6 +17,7 @@ class PriorityQueue:
 
     def is_empty(self):
         return len(self.queue) == 0
+
 
 my_queue = PriorityQueue()
 my_queue.enqueue(3)

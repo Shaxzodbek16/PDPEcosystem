@@ -9,18 +9,20 @@ from .models import Teacher
 #     }
 #     return render(request, 'courses/home.html', context=context)
 
-def search_teacher(request):
-    search=request.GET.get('search')
-    if search is None:
-        teachers=Teacher.objects.all()
-    else:
-        teachers=Teacher.objects.filter(first_name__icontains=search)
 
-    return render(request, 
-                  'courses/home2.html', 
-                  {
-                      "teachers":teachers,
-                      "search":search, 
-                      'is_empty': Teacher.objects.all().exists(),
-                    }
-                  )
+def search_teacher(request):
+    search = request.GET.get("search")
+    if search is None:
+        teachers = Teacher.objects.all()
+    else:
+        teachers = Teacher.objects.filter(first_name__icontains=search)
+
+    return render(
+        request,
+        "courses/home2.html",
+        {
+            "teachers": teachers,
+            "search": search,
+            "is_empty": Teacher.objects.all().exists(),
+        },
+    )

@@ -1,7 +1,8 @@
-# Task 3. Darsda o`tilgan LinkedList ning o`rtadagi 
-# qiymatini topadigan funksiya yarating hamda 
+# Task 3. Darsda o`tilgan LinkedList ning o`rtadagi
+# qiymatini topadigan funksiya yarating hamda
 # uning Time Complexity sini aniqlang.
 # public void printMiddle()
+
 
 class Node(object):
     def __init__(self, data=None):
@@ -15,9 +16,10 @@ class Node(object):
                 return True
             current = current.next
         return False
+
     # Time Complexity O(n)
     # Space Complexity O(1)
-    
+
     def lastIndexOf(self, item):
         current = self
         last_index = -1
@@ -28,9 +30,10 @@ class Node(object):
             current = current.next
             index += 1
         return last_index
+
     # Time Complexity O(n)
     # Space Complexity O(1)
-    
+
     def printMiddle(self):
         slow = self
         fast = self
@@ -38,6 +41,6 @@ class Node(object):
             slow = slow.next
             fast = fast.next.next
         print("Middle element is: ", slow.data)
-    
+
     # Time Complexity O(n)
     # Space Complexity O(1)

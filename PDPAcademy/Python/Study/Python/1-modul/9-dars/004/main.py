@@ -6,7 +6,7 @@
 # list_againt=list_againt[::-1]
 # for char in list_againt:
 #     print(char, end='')
-        
-list_=input("Enter : ").split(' ')
+
+list_ = input("Enter : ").split(" ")
 for i in range(0, len(list_)):
-    print(list_[i][::-1], end=' ')
+    print(list_[i][::-1], end=" ")

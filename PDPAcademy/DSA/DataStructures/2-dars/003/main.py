@@ -1,5 +1,5 @@
-# Task 3. Darsda o`tilgan ArrayList ning Minimum qiymatini 
-# topadigan funksiya yarating hamda uning Time Complexity 
+# Task 3. Darsda o`tilgan ArrayList ning Minimum qiymatini
+# topadigan funksiya yarating hamda uning Time Complexity
 # sini aniqlang.
 # public void min()
 
@@ -12,6 +12,7 @@ def min(ArrayList: List[int]) -> int:
         if ArrayList[i] < min_value:
             min_value = ArrayList[i]
     return min_value
+
 
 # Time complexity O(n)
 # Space complexity O(1)

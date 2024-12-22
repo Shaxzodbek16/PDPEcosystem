@@ -12,18 +12,18 @@ from aiogram.types import Message
 from aiogram.client.session.aiohttp import AiohttpSession
 import environ
 
-environ.Env.read_env('../.env')
+environ.Env.read_env("../.env")
 env = environ.Env()
-BOT_TOKEN = env('BOT_TOKEN')
+BOT_TOKEN = env("BOT_TOKEN")
 TOKEN = BOT_TOKEN
 dp = Dispatcher()
 
 
 @dp.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
-    answer = 'Hello, you have a chance to control you group with \'Control bot\'\n'
-    answer += 'Add me your group, and I will never let the people get bored !'
-    answer += 'Add your group and give me admin permission.'
+    answer = "Hello, you have a chance to control you group with 'Control bot'\n"
+    answer += "Add me your group, and I will never let the people get bored !"
+    answer += "Add your group and give me admin permission."
     await message.answer(answer)
 
 
@@ -33,22 +33,26 @@ async def any_message_handler(msg: Message) -> None:
     answer_text = msg.text
     if answer_text:
         answer_text = msg.text.lower()
-    with open('messages.json', 'r') as f:
+    with open("messages.json", "r") as f:
         messages = json.load(f)
     if question_text:
         question_text = question_text.text.lower()
         if not question_text in messages.keys():
             messages[question_text.lower()] = answer_text.lower()
-            with open('messages.json', 'w') as f:
+            with open("messages.json", "w") as f:
                 json.dump(messages, f, indent=3)
     if answer_text in messages.keys():
         await msg.reply((messages.get(answer_text)))
 
 
 async def main() -> None:
-    p = 'http://proxy.server:3128'
+    p = "http://proxy.server:3128"
     session = AiohttpSession(proxy=p)
-    bot = Bot(token=TOKEN, session=session ,default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+    bot = Bot(
+        token=TOKEN,
+        session=session,
+        default=DefaultBotProperties(parse_mode=ParseMode.HTML),
+    )
 
     await dp.start_polling(bot)
 
